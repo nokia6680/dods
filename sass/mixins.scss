@@ -1,0 +1,119 @@
+@mixin container {
+  min-width: $phones;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (min-width: $smartphones) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  @media (min-width: $tablets) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $laptop) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $netbooks) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $wide-netbooks) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media (min-width: $notebooks) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $widebooks) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $hd) {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+  @media (min-width: $fhd) {
+    max-width: $fhd;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 55px;
+  }
+}
+
+@mixin checkbox-default {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 62px;
+  padding-bottom: 2px;
+}
+
+@mixin custom-checkbox {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 39px;
+  top: -5px;
+  left: 0;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-wide) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 39px;
+    top: -11px;
+    left: 0;
+    border: 2px solid #444444;
+    background-color: #ffffff;
+  }
+}
+
+@mixin checkbox-checked {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  display: block;
+  width: 22px;
+  height: 16px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22px' height='16px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
+
+  @media (min-width: $desktop-wide) {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    display: block;
+    width: 22px;
+    height: 16px;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22px' height='16px' viewBox='0 0 32.666 22.742' enable-background='new 0 0 32.666 22.742' xml:space='preserve'%3E%3Cpolygon points='32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 '/%3E%3C/svg%3E%0A");
+  }
+}

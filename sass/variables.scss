@@ -1,0 +1,43 @@
+$phones: 320px;
+$smartphones: 480px;
+$tablets: 768px;
+$laptop: 1024px;
+$netbooks: 1280px;
+$wide-netbooks: 1366px;
+$notebooks: 1440px;
+$widebooks: 1600px;
+$hd: 1920px;
+$fhd: 2560px;
+
+/*Fonts*/
+$primary-color: #000;
+$secondary-color: #893b67;
+$main-font: "Gotham", sans-serif;
+
+
+@media (min-width: $laptop) {
+
+}
+
+@media (min-width: $netbooks) {
+
+}
+@media (min-width: $wide-netbooks) {
+
+}
+
+@media (min-width: $notebooks) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $hd) {
+
+}
+
+@media (min-width: $fhd) {
+
+}
