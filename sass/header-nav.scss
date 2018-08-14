@@ -39,6 +39,10 @@
 
     background-color: #fff;
     width: 100%;
+
+    box-shadow:0px 1px 4px 0px rgba(40,40,40,0.35);
+    -webkit-box-shadow:0px 1px 4px 0px rgba(40,40,40,0.35);
+    -moz-box-shadow:0px 1px 4px 0px rgba(40,40,40,0.35);
   }
 
   &__tricolor {

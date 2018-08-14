@@ -30,10 +30,11 @@
 
     color: $text-black;
     line-height: 1;
+    text-transform: uppercase;
 
     width: 100%;
 
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
     border: 3px solid #fff;
 
     outline: none;
