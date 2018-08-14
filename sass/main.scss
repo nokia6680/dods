@@ -1,13 +1,8 @@
 .main {
   width: 100%;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: space-evenly;
-
-  background-image: url('../img/main-bg-1.jpg');
-  background-repeat: no-repeat;
-  background-size: 1366px 768px;
-  background-position: top center;
 }

@@ -104,16 +104,16 @@
         <!--Блок меню-->
         <ul class="main-reg__toggle toggle-list">
           <li class="toggle-list__item toggle-item">
-            <input class="visually-hidden toggle-item__radio" type="radio" id="first" name="first" value="first-step" aria-required="true" onchange="Selected(this)" checked />
+            <input class="visually-hidden toggle-item__radio" type="radio" id="first" name="1" value="first-step" />
             <label class="toggle-item__label" for="first">1</label>
           </li>
           <li class="toggle-list__item toggle-item">
-            <input class="visually-hidden toggle-item__radio" type="radio" id="second" name="second" value="second-step" aria-required="true" onchange="Selected(this)" />
-            <label class="toggle-item__label" for="first">2</label>
+            <input class="visually-hidden toggle-item__radio" type="radio" id="second" name="1" value="second-step" />
+            <label class="toggle-item__label" for="second">2</label>
           </li>
           <li class="toggle-list__item toggle-item">
-            <input class="visually-hidden toggle-item__radio" type="radio" id="third" name="third" value="third-step" aria-required="true" onchange="Selected(this)" />
-            <label class="toggle-item__label" for="first">3</label>
+            <input class="visually-hidden toggle-item__radio" type="radio" id="third" name="1" value="third-step" />
+            <label class="toggle-item__label" for="third">3</label>
           </li>
         </ul>
         <!--Блок первого шага-->
@@ -141,16 +141,16 @@
           <form class="reg-second__form second-form" method="post" action="#" id="second-form">
             <ul class="second-form__list second-list">
               <li class="second-list__item second-item second-item--code">
-                <label class="second-item__label" for="sms-code">Введите код из SMS:</label>
+                <label class="second-item__label second-item__label--code" for="sms-code">Введите код из SMS:</label>
                 <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" required />
                 <span class="second-item__disclaimer">Ваш телефон нужен для отправки приглашения</span>
               </li>
               <li class="second-list__item second-item second-item--agreement">
                 <input class="second-item__input second-item__input--checkbox visually-hidden" type="checkbox" name="agree" id="agree" required />
-                <label class="second-item__label" for="agree">Согласен на получение приглашения</label>
+                <label class="second-item__label second-item__label--agreement" for="agree">Согласен на получение приглашения</label>
               </li>
             </ul>
-            <button class="second-forn__submit" type="submit">Отправить</button>
+            <button class="second-form__submit" type="submit">Отправить</button>
           </form>
         </div>
         <!--Блок третьего шага-->

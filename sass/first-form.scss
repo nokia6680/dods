@@ -1,0 +1,28 @@
+.first-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  &__submit {
+    font: {
+      size: 1.375em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-black;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: $submit-btn;
+
+    border: 2px solid #000;
+    border-radius: 25px;
+
+    padding: 7px 13px;
+    margin-top: 8px;
+  }
+}

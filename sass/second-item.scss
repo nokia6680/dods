@@ -1,0 +1,83 @@
+.second-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  &--agreement {
+    margin-top: 7px;
+  }
+
+  &__label--code {
+    font: {
+      size: 1.375em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+
+    text-align: center;
+  }
+
+  &__label--agreement {
+    font: {
+      size: 1em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__input--code {
+    font: {
+      size: 3em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-black;
+    line-height: 1;
+    letter-spacing: 8px;
+    text-align: center;
+
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #fff;
+    margin-top: 2px;
+  }
+
+  &__disclaimer {
+    font: {
+      size: 0.75em;
+      family: $main-font;
+      weight: 900;
+    }
+
+    color: $text-white;
+    line-height: 0.875em;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 190px;
+    margin-top: 2px;
+  }
+}
+
+.second-item__input--checkbox + label {
+  @include checkbox-default;
+}
+
+.second-item__input--checkbox + label::before {
+  @include custom-checkbox;
+}
+
+.second-item__input--checkbox:checked + label::after {
+  @include checkbox-checked;
+}
