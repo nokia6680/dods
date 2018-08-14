@@ -1,0 +1,19 @@
+.index-promo {
+  width: 100%;
+
+  &__description {
+    font: {
+      size: 1.063em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-align: center;
+
+    width: 310px;
+
+    margin-bottom: 0;
+  }
+}

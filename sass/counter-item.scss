@@ -1,0 +1,32 @@
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__nr {
+    font: {
+      size: 2.5em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-black;
+    line-height: 1;
+  }
+
+  &__name {
+    font: {
+      size: 0.813em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-black;
+    line-height: 1;
+  }
+}

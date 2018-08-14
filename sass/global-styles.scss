@@ -21,8 +21,10 @@ html {
 
 body {
   font-family: $main-font;
-  color: #000;
-  background-color: #fff;
+  font-size: 16px;
+  color: $text-black;
+  background-color: #f99999;
+  text-transform: uppercase;
 
   min-width: 320px;
 }

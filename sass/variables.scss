@@ -1,5 +1,5 @@
 $phones: 320px;
-$smartphones: 480px;
+$smartphones: 360px;
 $tablets: 768px;
 $laptop: 1024px;
 $netbooks: 1280px;
@@ -13,6 +13,15 @@ $fhd: 2560px;
 $primary-color: #000;
 $secondary-color: #893b67;
 $main-font: "Gotham", sans-serif;
+
+$text-black: #000000;
+$text-white: #ffffff;
+
+$header-bg: #ff6700;
+$yellow-bg: #f8eb21;
+$free-bg: #a2d9d1;
+$submit-btn: #ff6700;
+$footer-bg: #0b0a0a;
 
 
 @media (min-width: $laptop) {

@@ -68,3 +68,10 @@
   font-weight: 900;
   font-style: italic;
 }
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham-ultra.eot");
+  src: url("../fonts/gotham-ultra.eot") format('embedded-opentype'), url("../fonts/gotham-ultra.woff") format('woff'), url("../fonts/gotham-ultra.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

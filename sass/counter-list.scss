@@ -1,0 +1,37 @@
+.counter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  width: 100%;
+
+  background-color: $yellow-bg;
+  padding: 5px 5px;
+
+  border: none;
+  border-radius: 15px;
+  position: relative;
+  z-index: auto;
+
+  margin-top: -5px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 103%;
+    height: 113%;
+
+    background: repeating-linear-gradient(45deg, $yellow-bg, $yellow-bg 10px, black 0, black 24px);
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+
+    border-radius: 15px;
+  }
+}
