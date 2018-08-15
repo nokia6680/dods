@@ -49,3 +49,48 @@
     display: none;
   }
 }
+
+@media (min-width: $smartphones) {
+  .first-item {
+    margin-bottom: 15px;
+    position: relative;
+
+    &__label {
+      font: {
+        size: 0.963em;
+      }
+
+      margin-bottom: 4px;
+    }
+
+    &__input {
+      font: {
+        size: 1.375em;
+      }
+      
+      padding-left: 9px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 9px;
+    }
+
+    &__required {
+      position: absolute;
+
+      bottom: -13px;
+      left: 0;
+      display: block;
+      font: {
+        size: 0.688em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $yellow-hover;
+      line-height: 1;
+      text-transform: uppercase;
+
+      margin-top: 4px;
+    }
+  }
+}

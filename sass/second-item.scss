@@ -87,3 +87,45 @@
 .second-item__input--checkbox:checked + label::after {
   @include checkbox-checked;
 }
+
+
+@media (min-width: $smartphones) {
+  .second-item {
+    &--agreement {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    &__label--code {
+      font: {
+        size: 1.5em;
+      }
+    }
+
+    &__label--agreement {
+      font: {
+        size: 1.188em;
+      }
+    }
+
+    &__input--code {
+      font: {
+        size: 3.313em;
+      }
+
+      margin-top: 10px;
+    }
+
+    &__disclaimer {
+      font: {
+        size: 0.938em;
+      }
+
+      color: $text-white;
+      line-height: 1;
+
+      width: 230px;
+      margin-top: 4px;
+    }
+  }
+}

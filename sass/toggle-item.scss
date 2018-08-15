@@ -51,3 +51,41 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $smartphones) {
+  .toggle-item {
+    width: 76px;
+    height: 75px;
+
+    background-size: 76px 75px;
+    padding-top: 10px;
+
+    &__active {
+      width: 83px;
+      height: 82px;
+
+      background-size: 83px 82px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 49px;
+
+      &::after {
+        top: 30px;
+        right: -44px;
+      }
+    }
+
+    &__label {
+      font: {
+        size: 3em;
+      }
+    }
+
+    &__label--active {
+      font: {
+        size: 3.313em;
+      }
+    }
+  }
+}

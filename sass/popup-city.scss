@@ -97,3 +97,40 @@
     border: 2px solid #000;
   }
 }
+
+@media (min-width: $smartphones) {
+  .popup-city {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-left: 44px;
+    padding-top: 20px;
+    padding-right: 44px;
+    padding-bottom: 20px;
+
+    width: 80%;
+
+    &__controls {
+      justify-content: space-between;
+    }
+
+    &__title {
+      font: {
+        size: 1.512em;
+      }
+    }
+
+    &__no {
+      font: {
+        size: 1.512em;
+      }
+    }
+
+    &__yes {
+      font: {
+        size: 1.512em;
+      }
+    }
+  }
+}

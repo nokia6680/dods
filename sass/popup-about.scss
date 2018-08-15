@@ -18,8 +18,9 @@
 
     padding-bottom: 63px;
 
-    background-image: url('../img/about-bg.jpg');
-    background-position: top -20px center;
+    background-image: url('../img/about-bg.png');
+    background-size: 320px auto;
+    background-position: top 50px center;
     background-repeat: no-repeat;
   }
 
@@ -105,5 +106,70 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .popup-about {
+    width: 360px;
+    height: 640px;
+
+    &__wrapper {
+      margin-top: 71px;
+
+      padding-bottom: 71px;
+
+      background-image: url('../img/about-bg.jpg');
+      background-size: 360px auto;
+      background-position: top -10px center;
+    }
+
+    &__close {
+      background-image: url('../img/menu-close.png');
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 14px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.55em;
+      }
+
+      color: $text-black;
+      line-height: 1;
+      text-transform: uppercase;
+
+      padding-left: 15px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      margin: 0;
+    }
+
+    &__description {
+      background-color: $popup-header;
+
+      border-top: 2px solid #000;
+      width: 100%;
+      margin: 0;
+
+      font: {
+        size: 1.125em;
+      }
+
+      line-height: 1.250em;
+
+      padding-left: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 14px;
+
+      max-height: 202px;
+      overflow-y: scroll;
+    }
   }
 }

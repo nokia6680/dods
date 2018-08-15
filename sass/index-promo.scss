@@ -18,3 +18,17 @@
     margin-top: 8px;
   }
 }
+
+@media (min-width: $smartphones) {
+  .index-promo {
+    &__description {
+      font: {
+        size: 1.125em;
+      }
+
+      width: 330px;
+
+      margin-top: 17px;
+    }
+  }
+}

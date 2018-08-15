@@ -36,3 +36,25 @@
     margin-bottom: 12px;
   }
 }
+
+@media (min-width: $smartphones) {
+  .third-success {
+    &__title {
+      font: {
+        size: 1.625em;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 1.25em;
+      }
+
+      margin-bottom: 27px;
+
+      width: 330px;
+    }
+  }
+}

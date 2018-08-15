@@ -1,8 +1,14 @@
 .reg-third {
-  display: none;
+  display: block;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   margin-top: 8px;
+}
+
+@media (min-width: $smartphones) {
+  .reg-third {
+    margin-top: 22px;
+  }
 }

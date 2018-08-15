@@ -40,3 +40,24 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $smartphones) {
+  .footer {
+    padding-top: 10px;
+
+    &::before {
+      background-size: 352px 131px;
+
+      width: 352px;
+      height: 131px;
+
+      z-index: 1000;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.438em;
+      }
+    }
+  }
+}

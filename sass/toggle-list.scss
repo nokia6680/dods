@@ -11,3 +11,9 @@
 
   margin-top: 8px;
 }
+
+@media (min-width: $smartphones) {
+  .toggle-list {
+    margin-top: 10px;
+  }
+}

@@ -4,8 +4,6 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 100%;
-
   &__submit {
     font: {
       size: 1.375em;
@@ -24,5 +22,26 @@
 
     padding: 7px 13px;
     margin-top: 8px;
+
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+  }
+}
+
+@media (min-width: $smartphones) {
+  .second-form {
+    &__submit {
+      font: {
+        size: 1.938em;
+      }
+
+      line-height: 1;
+
+      border-radius: 45px;
+
+      padding: 10px 20px;
+      margin-top: 30px;
+    }
   }
 }

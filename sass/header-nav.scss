@@ -53,3 +53,28 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: $smartphones) {
+  .header-nav {
+    width: 100%;
+
+    &__upper {
+      padding-top: 6px;
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-bottom: 3px;
+    }
+
+    &__logo {
+      background-size: 183px 26px;
+
+      width: 183px;
+      height: 26px;
+    }
+
+    &__tricolor {
+      width: 135px;
+      margin-right: 14px;
+    }
+  }
+}

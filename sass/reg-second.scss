@@ -6,3 +6,9 @@
 
   margin-top: 8px;
 }
+
+@media (min-width: $smartphones) {
+  .reg-second {
+    margin-top: 24px;
+  }
+}

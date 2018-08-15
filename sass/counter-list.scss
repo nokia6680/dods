@@ -33,5 +33,28 @@
     z-index: -1;
 
     border-radius: 15px;
+
+    box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+  }
+}
+
+
+@media (min-width: $smartphones) {
+  .counter-list {
+    padding: 6px 5px;
+
+    &::after {
+      width: 103%;
+      height: 113%;
+
+      background: repeating-linear-gradient(45deg, $yellow-bg, $yellow-bg 10px, black 0, black 24px);
+      top: -4px;
+      left: -4px;
+      z-index: -1;
+
+      border-radius: 15px;
+    }
   }
 }

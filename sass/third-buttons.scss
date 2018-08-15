@@ -94,3 +94,51 @@
     }
   }
 }
+
+@media (min-width: $smartphones) {
+  .third-buttons {
+    &__about {
+      font: {
+        size: 1.613em;
+      }
+
+      border-radius: 35px;
+
+      padding-left: 17px;
+      padding-right: 63px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+      margin-bottom: 14px;
+
+      &::after {
+        width: 34px;
+        height: 29px;
+
+        background-size: 34px 29px;
+      }
+    }
+
+    &__youtube {
+      font: {
+        size: 1.613em;
+      }
+
+      border-radius: 35px;
+
+      padding-left: 20px;
+      padding-right: 83px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      &::after {
+        width: 29px;
+        height: 40px;
+
+        background-size: 29px 40px;
+
+        top: 13px;
+      }
+    }
+  }
+}

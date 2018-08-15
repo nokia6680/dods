@@ -17,3 +17,11 @@
 
   z-index: 999;
 }
+
+@media (min-width: $smartphones) {
+  .nav-list {
+    top: -400px;
+    left: 0;
+    z-index: 9999;
+  }
+}

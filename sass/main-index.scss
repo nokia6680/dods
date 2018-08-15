@@ -17,8 +17,8 @@
     border: 3px solid #000;
     border-radius: 25px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -37,5 +37,45 @@
 
   &__disclaimer {
     display: none;
+  }
+}
+
+@media (min-width: $smartphones) {
+  .main-index {
+    padding-bottom: 0;
+
+    &__register {
+      margin-bottom: 5px;
+      margin-top: 14px;
+
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__disclaimer {
+      display: block;
+
+      background-image: url('../img/shape-bg.png');
+      background-repeat: no-repeat;
+      background-size: 289px 108px;
+
+      width: 289px;
+      height: 108px;
+
+      font: {
+        size: 1.75em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 20px;
+    }
   }
 }

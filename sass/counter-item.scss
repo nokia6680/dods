@@ -30,3 +30,23 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $smartphones) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &__nr {
+      font: {
+        size: 2.625em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 0.813em;
+      }
+    }
+  }
+}

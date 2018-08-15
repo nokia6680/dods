@@ -33,3 +33,20 @@
     text-align: center;
   }
 }
+
+@media (min-width: $smartphones) {
+  .index-place {
+    padding-left: 17px;
+    padding-right: 17px;
+
+    margin-top: 10px;
+
+    &__description {
+      font: {
+        size: 1.5em;
+      }
+
+      width: 290px;
+    }
+  }
+}
