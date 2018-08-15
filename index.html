@@ -97,6 +97,8 @@
         </div>
         <!--Блок кнопки регистрация-->
         <button class="main-index__register" type="button">Регистрация</button>
+        <!--Скрыто на маленькой мобильной - открыто после 360пикс-->
+        <h3 class="main-index__disclaimer">Только на Nickelodeon!</h3>
       </section>
       <!--Секция интерфейса регистрации-->
       <section class="main__reg main-reg">
@@ -123,14 +125,17 @@
               <li class="first-list__item first-item first-item--name">
                 <label class="first-item__label" for="name">Ваше имя:</label>
                 <input class="first-item__input" type="text" name="personal-details" id="name" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--phone">
                 <label class="first-item__label" for="phone">Номер телефона:</label>
                 <input class="first-item__input" type="number" name="phone-details" id="phone" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--agreement">
                 <label class="first-item__label" for="agreement">Номер договора Триколор ТВ:</label>
                 <input class="first-item__input" type="number" name="agreement-details" id="agreement" required />
+                <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
             </ul>
             <button class="first-form__submit" type="submit">Отправить</button>
@@ -192,7 +197,109 @@
   		</ul>
   	</footer>
   </div>
+  <!--Попап вопроса про город-->
+  <div class="overlay overlay--on">
+    <div class="popup-city popup-city__hidden">
+      <p class="popup-city__title">Ваш город <span class="popup-city__name">Новосибирск</span>?</p>
+      <div class="popup-city__controls">
+        <button class="popup-city__yes" type="button">Да</button>
+        <button class="popup-city__no" type="button">Нет</button>
+      </div>
+    </div>
+  </div>
+  <!--Попапы элементов меню-->
+  <div class="overlay-1 overlay-1--on">
+    <!--Попап о шоу-->
+    <div class="popup-about popup-about__hidden">
+      <div class="popup-about__wrapper">
+        <header class="popup-about__header">
+          <h3 class="popup-about__title">О шоу</h3>
+          <button class="popup-about__close" type="button"></button>
+        </header>
+        <p class="popup-about__description">Описание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоу</p>
+      </div>
+    </div>
+    <!--Попап вопросов и ответов-->
+    <div class="popup-faq popup-faq__hidden">
+      <div class="popup-faq__wrapper">
+        <header class="popup-faq__header">
+          <h3 class="popup-faq__title">Вопросы и ответы</h3>
+          <button class="popup-faq__close" type="button"></button>
+        </header>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">1.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">2.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">3.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">4.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">5.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">6.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">7.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">8.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">9.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="popup-faq__list">
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">10.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">11.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+                <li class="popup-faq__item">
+                  <h3 class="popup-faq__question"><span class="popup-faq__nr">12.</span> Вопрос</h3>
+                  <span class="popup-faq__answer">Ответ ответ Ответ ответ Ответ ответ Ответ ответ Ответ ответ</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>
