@@ -78,3 +78,28 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .header-nav {
+    width: 100%;
+
+    &__upper {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 6px;
+    }
+
+    &__logo {
+      background-size: 221px 31px;
+
+      width: 221px;
+      height: 31px;
+    }
+
+    &__tricolor {
+      width: 162px;
+      margin-right: 30px;
+    }
+  }
+}

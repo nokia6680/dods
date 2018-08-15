@@ -134,3 +134,31 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .popup-city {
+    width: 80%;
+
+    &__controls {
+      justify-content: space-evenly;
+    }
+
+    &__title {
+      font: {
+        size: 1.625em;
+      }
+    }
+
+    &__no {
+      font: {
+        size: 1.625em;
+      }
+    }
+
+    &__yes {
+      font: {
+        size: 1.625em;
+      }
+    }
+  }
+}

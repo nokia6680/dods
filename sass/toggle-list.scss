@@ -17,3 +17,9 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $wsvga) {
+  .toggle-list {
+    margin-top: 20px;
+  }
+}

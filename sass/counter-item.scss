@@ -50,3 +50,24 @@
     }
   }
 }
+
+
+@media (min-width: $wsvga) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    &__nr {
+      font: {
+        size: 2.75em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}

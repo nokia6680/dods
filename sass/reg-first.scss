@@ -18,3 +18,11 @@
     padding-right: 1px;
   }
 }
+
+@media (min-width: $wsvga) {
+  .reg-first {
+    margin-top: 30px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}

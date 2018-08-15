@@ -32,3 +32,17 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .index-promo {
+    &__description {
+      font: {
+        size: 1.250em;
+      }
+
+      width: 380px;
+
+      margin-top: 17px;
+    }
+  }
+}

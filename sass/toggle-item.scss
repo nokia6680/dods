@@ -89,3 +89,36 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .toggle-item {
+    width: 81px;
+    height: 80px;
+
+    background-size: 81px 80px;
+    padding-top: 12px;
+
+    &__active {
+      width: 91px;
+      height: 90px;
+
+      background-size: 91px 91px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 53px;
+    }
+
+    &__label {
+      font: {
+        size: 3.250em;
+      }
+    }
+
+    &__label--active {
+      font: {
+        size: 3.375em;
+      }
+    }
+  }
+}

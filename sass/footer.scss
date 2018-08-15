@@ -52,11 +52,39 @@
       height: 131px;
 
       z-index: 1000;
+
+      bottom: 22px;
+      left: 50%;
     }
 
     &__copyright {
       font: {
         size: 0.438em;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $wsvga) {
+  .footer {
+    padding-top: 10px;
+
+    &::before {
+      background-size: 422px 157px;
+
+      width: 422px;
+      height: 157px;
+
+      z-index: 1000;
+
+      bottom: 22px;
+      left: 50%;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.5em;
       }
     }
   }

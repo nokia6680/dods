@@ -173,3 +173,61 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .popup-about {
+    width: 600px;
+    height: 800px;
+
+    &__wrapper {
+      margin-top: 85px;
+
+      padding-bottom: 85px;
+
+      background-image: url('../img/about-bg.jpg');
+      background-size: 600px auto;
+      background-position: top -90px center;
+    }
+
+    &__close {
+      background-image: url('../img/menu-close.png');
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 30px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.75em;
+      }
+
+      padding-left: 30px;
+    }
+
+    &__description {
+      background-color: $popup-header;
+
+      border-top: 2px solid #000;
+      width: 100%;
+      margin: 0;
+
+      font: {
+        size: 1.250em;
+      }
+
+      line-height: 1.250em;
+
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 30px;
+
+      max-height: 202px;
+      overflow-y: scroll;
+    }
+  }
+}

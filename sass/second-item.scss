@@ -129,3 +129,41 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .second-item {
+    &--agreement {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    &__label--code {
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__label--agreement {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__input--code {
+      font: {
+        size: 3.5em;
+      }
+
+      margin-top: 20px;
+    }
+
+    &__disclaimer {
+      font: {
+        size: 1em;
+      }
+
+      width: 380px;
+      margin-top: 15px;
+    }
+  }
+}

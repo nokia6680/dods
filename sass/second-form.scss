@@ -45,3 +45,16 @@
     }
   }
 }
+
+@media (min-width: $wsvga) {
+  .second-form {
+    &__submit {
+      font: {
+        size: 2em;
+      }
+
+      padding: 10px 20px;
+      margin-top: 50px;
+    }
+  }
+}

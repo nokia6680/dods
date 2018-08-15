@@ -10,11 +10,19 @@
     margin: 0 auto;
     padding: 0 14px;
   }
+
+  @media (min-width: $wsvga) {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   @media (min-width: $tablets) {
     width: auto;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
   }
   @media (min-width: $laptop) {
     width: auto;
@@ -88,6 +96,14 @@
     width: 38px;
     height: 38px;
   }
+
+  @media (min-width: $wsvga) {
+    width: 42px;
+    height: 42px;
+
+    top: -8px;
+    left: -13px;
+  }
 }
 
 @mixin checkbox-checked {
@@ -110,5 +126,15 @@
 
     top: -5px;
     left: -5px;
+  }
+
+  @media (min-width: $wsvga) {
+    width: 58px;
+    height: 46px;
+
+    background-size: 58px 46px;
+
+    top: -13px;
+    left: -18px;
   }
 }
