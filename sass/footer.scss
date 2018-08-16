@@ -89,3 +89,24 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .footer {
+    padding-top: 10px;
+
+    &::before {
+      background-size: 528px 197px;
+
+      width: 528px;
+      height: 197px;
+
+      bottom: 30px;
+    }
+
+    &__copyright {
+      font: {
+        size: 0.75em;
+      }
+    }
+  }
+}

@@ -59,8 +59,20 @@
       font: {
         size: 2em;
       }
-      
+
       margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .first-form {
+    &__submit {
+      font: {
+        size: 2.25em;
+      }
+
+      margin-top: 30px;
     }
   }
 }

@@ -80,3 +80,25 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .third-success {
+    &__title {
+      font: {
+        size: 2em;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font: {
+        size: 1.5em;
+      }
+
+      margin-bottom: 40px;
+
+      width: 480px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .second-item {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -163,6 +163,44 @@
       }
 
       width: 380px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .second-item {
+    &--agreement {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+
+    &__label--code {
+      font: {
+        size: 2em;
+      }
+    }
+
+    &__label--agreement {
+      font: {
+        size: 1.50em;
+      }
+    }
+
+    &__input--code {
+      font: {
+        size: 3.75em;
+      }
+
+      margin-top: 20px;
+    }
+
+    &__disclaimer {
+      font: {
+        size: 1.25em;
+      }
+
+      width: 450px;
       margin-top: 15px;
     }
   }

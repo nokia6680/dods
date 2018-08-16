@@ -174,3 +174,39 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .third-buttons {
+    &__about {
+      font: {
+        size: 2em;
+      }
+
+      border-radius: 45px;
+
+      padding-left: 35px;
+      padding-right: 63px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      margin-bottom: 30px;
+
+      &::after {
+        top: 13px;
+        right: 13px;
+      }
+    }
+
+    &__youtube {
+      font: {
+        size: 2em;
+      }
+
+      padding-left: 45px;
+
+      &::after {
+        top: 17px;
+      }
+    }
+  }
+}

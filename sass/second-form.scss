@@ -58,3 +58,16 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .second-form {
+    &__submit {
+      font: {
+        size: 2.25em;
+      }
+
+      padding: 10px 20px;
+      margin-top: 80px;
+    }
+  }
+}

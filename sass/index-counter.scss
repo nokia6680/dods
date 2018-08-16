@@ -63,3 +63,20 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .index-counter {
+    &__title {
+      font: {
+        size: 1.50em;
+      }
+
+      line-height: 1.575em;
+
+      padding: 5px 25px;
+      margin-top: 40px;
+
+      border-radius: 20px;
+    }
+  }
+}

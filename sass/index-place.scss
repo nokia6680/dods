@@ -50,3 +50,22 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .index-place {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top: 20px;
+
+    &__description {
+      font: {
+        size: 1.75em;
+      }
+
+      width: 350px;
+    }
+  }
+}

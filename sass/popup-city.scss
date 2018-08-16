@@ -162,3 +162,31 @@
     }
   }
 }
+
+@media (min-width: $tablets) {
+  .popup-city {
+    width: 80%;
+
+    &__controls {
+      justify-content: space-evenly;
+    }
+
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__no {
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__yes {
+      font: {
+        size: 1.75em;
+      }
+    }
+  }
+}

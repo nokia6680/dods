@@ -3,7 +3,7 @@
 
   width: 100%;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -43,7 +43,7 @@
     display: none;
   }
 }
-
+/*Мобильные*/
 @media (min-width: $smartphones) {
   .main-index {
     padding-bottom: 0;
@@ -83,7 +83,6 @@
     }
   }
 }
-
 @media (min-width: $wsvga) {
   .main-index {
     padding-bottom: 0;
@@ -108,6 +107,34 @@
       }
 
       padding-top: 30px;
+    }
+  }
+}
+/*Планшет*/
+@media (min-width: $tablets) {
+  .main-index {
+    padding-bottom: 0;
+
+    &__register {
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+      font: {
+        size: 2em;
+      }
+    }
+
+    &__disclaimer {
+      background-size:434px 162px;
+
+      width: 434px;
+      height: 162px;
+
+      font: {
+        size: 2em;
+      }
+
+      padding-top: 40px;
     }
   }
 }
