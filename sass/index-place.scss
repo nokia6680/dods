@@ -69,3 +69,22 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .index-place {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin-top: 20px;
+
+    &__description {
+      font: {
+        size: 1.5em;
+      }
+
+      width: 290px;
+    }
+  }
+}

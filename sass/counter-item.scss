@@ -92,3 +92,23 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &__nr {
+      font: {
+        size: 3em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}

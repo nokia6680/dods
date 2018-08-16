@@ -8,7 +8,11 @@ $wide-netbooks: 1366px;
 $notebooks: 1440px;
 $widebooks: 1600px;
 $hd: 1920px;
-$fhd: 2560px;
+
+/*HEIGHTS*/
+
+$netbooks-quad: 1024px;
+$netbooks-wide: 720px;
 
 /*Fonts*/
 $primary-color: #000;
@@ -17,7 +21,12 @@ $main-font: "Gotham", sans-serif;
 
 $text-black: #000000;
 $text-white: #ffffff;
+$text-gray: #000000;
 $yellow-hover: #f8eb21;
+
+$btn-city: #e15998;
+$btn-about: #f0e21c;
+$btn-faq: #a2d9d1;
 
 $popup-header: #f9eb1d;
 
@@ -32,38 +41,5 @@ $footer-bg: #0b0a0a;
 $about-btn: #ff6700;
 $youtube-btn: #ff0000;
 
-
-@media (min-width: $smartphones) {
-
-}
-
-@media (min-width: $tablets) {
-
-}
-
-@media (min-width: $laptop) {
-
-}
-
-@media (min-width: $netbooks) {
-
-}
-@media (min-width: $wide-netbooks) {
-
-}
-
-@media (min-width: $notebooks) {
-
-}
-
-@media (min-width: $widebooks) {
-
-}
-
-@media (min-width: $hd) {
-
-}
-
-@media (min-width: $fhd) {
-
-}
+$social-item-bg: #ffffff;
+$social-hover: #ff6700;

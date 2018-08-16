@@ -80,3 +80,21 @@
     }
   }
 }
+
+
+@media (min-width: $laptop) {
+  .index-counter {
+    &__title {
+      font: {
+        size: 1.313em;
+      }
+
+      line-height: 1.625em;
+
+      padding: 0 20px;
+      margin-top: 16px;
+
+      border-radius: 15px;
+    }
+  }
+}

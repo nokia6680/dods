@@ -103,3 +103,50 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .header-nav {
+    width: 100%;
+
+    &__upper {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__logo {
+      background-size: 198px 28px;
+
+      width: 198px;
+      height: 28px;
+    }
+
+    &__tricolor {
+      width: 194px;
+      height: auto;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .header-nav {
+    &__upper {
+      padding-left: 30px;
+      padding-right: 30px;
+      transition: 0.5s ease-in;
+    }
+  }
+}
+
+
+@media (min-width: $wide-netbooks) {
+  .header-nav {
+    &__upper {
+      padding-left: 70px;
+      padding-right: 30px;
+      transition: 0.5s ease-in;
+    }
+  }
+}

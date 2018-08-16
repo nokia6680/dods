@@ -513,3 +513,120 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .popup-faq {
+    width: 410px;
+    height: 534px;
+
+    &__wrapper {
+      margin-top: 84px;
+
+      padding-bottom: 0;
+      height: 534px;
+
+      /* стили для слайдера */
+
+      .swiper-container {
+        height: 100%;
+      }
+
+      .swiper-slide {
+        background-image: url('../img/slide-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100% !important;
+      }
+
+      .swiper-pagination {
+        margin-bottom: 20px;
+      }
+
+      .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+        background-color: #fafcfd !important;
+        opacity: 1 !important;
+
+        &-active {
+          position: relative;
+          width: 23px !important;
+          height: 23px !important;
+
+          background-color: transparent !important;
+          border: 2px solid #fafcfd !important;
+
+          &::after {
+            position: absolute;
+            content: '';
+            width: 13px;
+            height: 13px;
+            background-color: #fafcfd;
+            border-radius: 7px;
+            top: 3px;
+            left: 3px;
+          }
+        }
+      }
+    }
+
+    /*Стили списка внутри слайдера*/
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+      height: 450px;
+
+      margin-top: 20px;
+
+      max-height: 410px;
+      overflow-y: scroll;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+      padding-left: 10px;
+    }
+
+    &__question {
+      font: {
+        size: 1.125em;
+      }
+
+      margin-top: 0;
+      margin-bottom: 23px;
+    }
+
+    &__answer {
+      font: {
+        size: 0.875em;
+      }
+    }
+
+    /* стили общие для попапов */
+
+    &__close {
+      background-color: #ee2e24;
+      background-image: url('../img/menu-close.png');
+      background-size: 15px 15px;
+      margin-right: 30px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.75em;
+      }
+
+      padding-left: 10px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      margin: 0;
+    }
+  }
+}

@@ -39,6 +39,13 @@ body {
     background-size: 1920px 1080px;
     background-position: top center;
   }
+
+  @media (min-width: $laptop) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1259px 509px, 1920px 1080px;
+    background-position: center center, top center;
+  }
 }
 
 img {

@@ -7,3 +7,16 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@media (min-width: $netbooks) and (max-height: $netbooks-wide) {
+  .main-reg {
+    margin-top: 0;
+  }
+}
+@media (min-width: $netbooks) and (min-height: $netbooks-quad) {
+  .main-reg {
+    margin-top: 10%;
+
+    transition: 0.8s ease-in-out;
+  }
+}

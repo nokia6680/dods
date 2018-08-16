@@ -1,5 +1,5 @@
 .reg-first {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -30,6 +30,14 @@
 @media (min-width: $tablets) {
   .reg-first {
     margin-top: 30px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .reg-first {
+    margin-top: 16px;
     padding-left: 1px;
     padding-right: 1px;
   }

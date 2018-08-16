@@ -291,3 +291,57 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .popup-about {
+    width: 410px;
+    height: 534px;
+
+    &__wrapper {
+      margin-top: 85px;
+
+      padding-bottom: 0;
+
+
+      background-image: url('../img/about-bg-laptop.png');
+      background-size: contain;
+      background-position: top 33px center;
+    }
+
+    &__close {
+      background-image: url('../img/menu-close.png');
+      background-size: 15px 15px;
+      min-width: 30px;
+      max-width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    &__title {
+      width: 100%;
+
+      font: {
+        size: 1.75em;
+      }
+
+      padding-left: 10px;
+    }
+
+    &__description {
+      font: {
+        size: 1em;
+      }
+
+      line-height: 1.125em;
+
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+
+      max-height: 150px;
+      min-height: 150px;
+      overflow-y: scroll;
+    }
+  }
+}

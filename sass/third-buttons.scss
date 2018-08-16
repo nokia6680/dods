@@ -210,3 +210,39 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .third-buttons {
+    &__about {
+      font: {
+        size: 1.625em;
+      }
+
+      border-radius: 45px;
+
+      padding-left: 20px;
+      padding-right: 63px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      margin-bottom: 34px;
+
+      &::after {
+        top: 13px;
+        right: 13px;
+      }
+    }
+
+    &__youtube {
+      font: {
+        size: 1.625em;
+      }
+
+      padding-left: 25px;
+
+      &::after {
+        top: 13px;
+      }
+    }
+  }
+}

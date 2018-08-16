@@ -164,3 +164,38 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .first-item {
+    margin-bottom: 25px;
+    position: relative;
+
+    &__label {
+      font: {
+        size: 1.063em;
+      }
+
+      margin-bottom: 8px;
+    }
+
+    &__input {
+      font: {
+        size: 1.5em;
+      }
+
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+    }
+
+    &__required {
+      bottom: -15px;
+      left: 0;
+
+      font: {
+        size: 0.75em;
+      }
+    }
+  }
+}

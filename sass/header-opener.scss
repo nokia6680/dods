@@ -11,3 +11,9 @@
     border: none;
   }
 }
+
+@media (min-width: $laptop) {
+  .header-opener {
+    display: none;
+  }
+}

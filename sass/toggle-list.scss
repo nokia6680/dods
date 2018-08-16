@@ -23,3 +23,9 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: $laptop) {
+  .toggle-list {
+    margin-top: 14px;
+  }
+}

@@ -3,7 +3,7 @@
 
   width: 100%;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -81,6 +81,10 @@
 
       padding-top: 20px;
     }
+
+    &__disclaimer--desktop {
+      display: none;
+    }
   }
 }
 @media (min-width: $wsvga) {
@@ -136,5 +140,60 @@
 
       padding-top: 40px;
     }
+  }
+}
+/*Десктоп*/
+@media (min-width: $laptop) {
+  .main-index {
+    padding-bottom: 0;
+    position: relative;
+
+    &__register {
+      margin-bottom: 0;
+      margin-top: 25px;
+
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__disclaimer {
+      background-size: 265px 104px;
+
+      width: 265px;
+      height: 104px;
+
+      position: absolute;
+      left: -70%;
+      top: 65%;
+    }
+
+    &__disclaimer--tablet {
+      display: none;
+    }
+
+    &__disclaimer--desktop {
+      display: block;
+      font: {
+        size: 0.875em;
+      }
+
+      padding-top: 25px;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (min-width: $netbooks) and (max-height: $netbooks-wide) {
+  .main-index {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $netbooks) and (min-height: $netbooks-quad) {
+  .main-index {
+    margin-top: 10%;
+
+    transition: 0.8s ease-in-out;
   }
 }

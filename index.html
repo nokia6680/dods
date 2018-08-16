@@ -55,9 +55,13 @@
       </nav>
       <!--Блок кнопок меню - только для десктоп версии-->
       <div class="header__buttons header-buttons">
-        <button class="header-buttons__locate" type="button"><span class="header-buttons__text">Новосибирск</span><span class="header-buttons__additional">(ваш город)</span></button>
-        <button class="header-buttons__about" type="button"><span class="header-buttons__text">О шоу</span></button>
-        <button class="header-buttons__faq" type="button"><span class="header-buttons__text">Вопросы и ответы</span></button>
+        <div class="header-buttons__left">
+          <button class="header-buttons__locate" type="button"><span class="header-buttons__text">Новосибирск</span><br /><span class="header-buttons__additional">(ваш город)</span></button>
+        </div>
+        <div class="header-buttons__right">
+          <button class="header-buttons__about" type="button"><span class="header-buttons__text">О шоу</span></button>
+          <button class="header-buttons__faq" type="button"><span class="header-buttons__text">Вопросы и ответы</span></button>
+        </div>
       </div>
     </header>
     <!--Основное содержание-->
@@ -97,8 +101,10 @@
         </div>
         <!--Блок кнопки регистрация-->
         <button class="main-index__register" type="button">Регистрация</button>
-        <!--Скрыто на маленькой мобильной - открыто после 360пикс-->
-        <h3 class="main-index__disclaimer">Только на Nickelodeon!</h3>
+        <!--Скрыто на маленькой мобильной - открыто после 360пикс и закрыто на десктопе-->
+        <h3 class="main-index__disclaimer main-index__disclaimer--tablet">Только на Nickelodeon!</h3>
+        <!--Скрыто везде кроме десктопа-->
+        <h3 class="main-index__disclaimer main-index__disclaimer--desktop">Совершенно<br />новые серии&nbsp;&mdash;&nbsp;только на Nickelodeon!</h3>
       </section>
       <!--Секция интерфейса регистрации-->
       <section class="main__reg main-reg">
@@ -151,8 +157,12 @@
                 <span class="second-item__disclaimer">Ваш телефон нужен для отправки приглашения</span>
               </li>
               <li class="second-list__item second-item second-item--agreement">
-                <input class="second-item__input second-item__input--checkbox visually-hidden" type="checkbox" name="agree" id="agree" required />
+                <input class="second-item__input second-item__input--agreement visually-hidden" type="checkbox" name="agree" id="agree" required checked/>
                 <label class="second-item__label second-item__label--agreement" for="agree">Согласен на получение приглашения</label>
+              </li>
+              <li class="second-list__item second-item second-item--personal">
+                <input class="second-item__input second-item__input--personal visually-hidden" type="checkbox" name="personal" id="personal" required />
+                <label class="second-item__label second-item__label--personal" for="personal">Согласен на <a class="second-item__link" href="#" target="_blank">обработку персональных данных</a></label>
               </li>
             </ul>
             <button class="second-form__submit" type="submit">Отправить</button>
@@ -216,7 +226,7 @@
           <h3 class="popup-about__title">О шоу</h3>
           <button class="popup-about__close" type="button"></button>
         </header>
-        <p class="popup-about__description">Описание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоуОписание шоу</p>
+        <p class="popup-about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
     <!--Попап вопросов и ответов-->

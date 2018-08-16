@@ -28,7 +28,7 @@
     width: auto;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   @media (min-width: $netbooks) {
     width: auto;
@@ -40,13 +40,13 @@
     width: auto;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 70px;
   }
   @media (min-width: $notebooks) {
     max-width: 100%;
     width: auto;
     margin: 0 auto;
-    padding: 0 55px;
+    padding: 0 70px;
   }
   @media (min-width: $widebooks) {
     max-width: 100%;
@@ -60,71 +60,74 @@
     margin: 0 auto;
     padding: 0 55px;
   }
-  @media (min-width: $fhd) {
-    max-width: $fhd;
-    width: auto;
-    margin: 0 auto;
-    padding: 0 55px;
-  }
 }
 
-@mixin checkbox-default {
+@mixin checkbox-default-1 {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 
   position: relative;
-  padding-left: 46px;
+  padding-left: 35px;
 
   @media (min-width: $smartphones) {
     padding-left: 50px;
   }
 }
 
-@mixin custom-checkbox {
+@mixin custom-checkbox-1 {
   position: absolute;
   content: "";
   display: block;
-  width: 34px;
-  height: 34px;
-  top: 0;
+  width: 20px;
+  height: 20px;
+  top: -6px;
   left: 0;
   border: 3px solid #fff;
   background-color: transparent;
 
   @media (min-width: $smartphones) {
-    width: 38px;
-    height: 38px;
+    width: 24px;
+    height: 24px;
+    top: 0px;
   }
 
   @media (min-width: $wsvga) {
     width: 42px;
     height: 42px;
 
-    top: -8px;
-    left: -13px;
+    top: -13px;
+    left: 0;
+  }
+
+  @media (min-width: $laptop) {
+    width: 35px;
+    height: 35px;
+
+    top: 0;
+    left: 0;
   }
 }
 
-@mixin checkbox-checked {
+@mixin checkbox-checked-1 {
   content: "";
   position: absolute;
-  top: -5px;
+  top: -7px;
   left: -5px;
   display: block;
-  width: 51px;
-  height: 40px;
+  width: 31px;
+  height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 52 40.78'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etick%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='51' height='40' transform='scale(1.02)' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAApCAYAAACV8mGQAAAACXBIWXMAAArrAAAK6wGCiw1aAAAFNUlEQVRoQ83ZW2xTdRzA8e9pC93a3Tc7bgaDBtYwBkQRjaBGjDFyMzyoDwYQvMADxAQ1mBijhkREFo2QIckGyGAJPhATCOoDISZGYoyXGLCAY7qtG2N469Jt7VjP8eF/Dv33ctqe3ugvOTnd2Tn/cz793379H0XTNEo5vF6vIv/t8/nSPrBSqigdI29GqPpeMwOWJEoH2QC7vrfp/9IQqIi+TworOZQOsuvbFMChf1YQkMm4LQFmo4QiDuQEyoGKrsW9635Zfvnc8zP/nQ24gTKiYCW+35UMygzU0dK/dlHVeJvTpjXvmDP8+drGwF2kgZUEygTkPtDsX/Ng7ejHinhwymzaPe/Mvd650jMyG3Dp5zoQjtJBSSAHUg0daPavfqQ+uNcAGVFmU+/eNW/oyNrGwCyiKLt8zm0dKOJAU4mCViUDyRFSle7WHs8zxwZqe4FxYAJQfT6fdttqKgnIRYYgEE1xx5zhw0SbnvXm5/V6E0aZbMME5M4UBKBC6OeAaw9i7oppbqbNT5rRIfpNyAWYzuipwgx0eGHfcw/UjL1HBl90RGP09HD15p2Xpn8LBIEwcNPn80XApAAJZEPcfIq+TdX3dsBmtebMmpxV0BfXa17eeWn69wjMJCLDuPUFJxQigYwZ3RiRXPremB8swVKAnrUCOjlU88pbl6edB8bQawg9ZTLOiykoCagMcC+tGfP8sOxKV1uzfzli4nMhHsxBBjCv12vkcTmD3r4y7TtglOiIF0Ef9YxzbxVmBmqpGvfsb/YfrbCrTzxcFzz+QdPgMizAdJDRjPMNmiQOBLEFyn3ICbgWVIYa2hf4Oyrs6v0AdgX3Ss/IoV3zhh5CwMpJAYsDOSkCCKTRT38AB6KGXC2Vocb2lv72SkfkvviL0t3IKJtYUDmWQUrw5FD1Fisg0FHS75cpQPnSmjHPvvn+zkqHuiTZRRADO48YVuU2riFQMaATi3s3tVSNv2lWphyTmhL4zF+7eW+P5ycsgCB587O3NfsPpQKBaIrrpv13cHfTtUeBCsSDG7mYMQ0UHQSJTUADtN9HnYc1UUDKsCu4VzcG2lq9gysQMHnYL0f0u8osQT8SbQHGfJQWBLF9KmbU62jpf1pO+1OFCuEzw1XbX/fNOAeExCHsQPmJxb0bsgSlHLZThVxTGuLim8DE5l/vPPPN3xWvZVJjNnA+5Rn55P2ma48D1cZ2bFHWNZQ1CBJRxhpAGBjbemHWKSuwNY2Bj96dO/QYUHNkYd/Ge6vH30h3HQhQ50DtpnyAIC6hNftJbSV7jmhMdI85v57nDq9Ody7ApKb80zlQ+9KeqwmDQlYgSJKl5wOWaUyoyo223oYXDvbVXyRPIEgyAeoFRfQtjLhRcOuFWafO/lX5qiqO5RyFAoHJrG4CG912ceaXZ4artucKKyQI0qxRSJmGnBm4W72DK570jOyziWOWotAgSJN/6TeQR8RxILjDN+PsV8NV26zW2ISq3Pi0r2GjDopPrfICggySyiSwEFnADNCB3vrfEKAQBQBBBijIHRZWlaFigcDiul+SPlYGVKTqYyFVGfjwqmdD12BtN6IPFRQEGdaUEan62Onr1VsiGqPy+WFV8e/t8awvJggs1pQRcTVmrKy6djddW7rKE+iwK7gnVKW/9Y871h/11/UgFkmKAoIsUZAU5gSc++cPLFlWF9zV3l//4v4/G/qIYooCghxQkPDGz3it4sDCC7JCRE4oiIEZOGNVyuh/xuvMooAgDyjI7aVzISIvKDnkZbJiQuTIO6oU4n+VfWmDvwAjdwAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: 51px 40px;
+  background-size: 31px 20px;
 
   @media (min-width: $smartphones) {
-    width: 55px;
-    height: 43px;
+    width: 35px;
+    height: 23px;
 
-    background-size: 55px 43px;
+    background-size: 35px 23px;
 
-    top: -5px;
+    top: -2px;
     left: -5px;
   }
 
@@ -134,7 +137,113 @@
 
     background-size: 58px 46px;
 
-    top: -13px;
-    left: -18px;
+    top: -19px;
+    left: -7px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 53px;
+    height: 42px;
+
+    background-size: 53px 42px;
+
+    top: -7px;
+    left: -7px;
+  }
+}
+
+@mixin checkbox-default-2 {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  position: relative;
+  padding-left: 35px;
+
+  @media (min-width: $smartphones) {
+    padding-left: 50px;
+  }
+}
+
+@mixin custom-checkbox-2 {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 3px solid #fff;
+  background-color: transparent;
+
+  @media (min-width: $smartphones) {
+    width: 24px;
+    height: 24px;
+
+    top: 1px;
+  }
+
+  @media (min-width: $wsvga) {
+    width: 42px;
+    height: 42px;
+
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablets) {
+    top: -6px;
+    left: 0;
+  }
+
+  @media (min-width: $laptop) {
+    width: 35px;
+    height: 35px;
+
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin checkbox-checked-2 {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  display: block;
+  width: 31px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 52 40.78'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etick%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='51' height='40' transform='scale(1.02)' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAApCAYAAACV8mGQAAAACXBIWXMAAArrAAAK6wGCiw1aAAAFNUlEQVRoQ83ZW2xTdRzA8e9pC93a3Tc7bgaDBtYwBkQRjaBGjDFyMzyoDwYQvMADxAQ1mBijhkREFo2QIckGyGAJPhATCOoDISZGYoyXGLCAY7qtG2N469Jt7VjP8eF/Dv33ctqe3ugvOTnd2Tn/cz793379H0XTNEo5vF6vIv/t8/nSPrBSqigdI29GqPpeMwOWJEoH2QC7vrfp/9IQqIi+TworOZQOsuvbFMChf1YQkMm4LQFmo4QiDuQEyoGKrsW9635Zfvnc8zP/nQ24gTKiYCW+35UMygzU0dK/dlHVeJvTpjXvmDP8+drGwF2kgZUEygTkPtDsX/Ng7ejHinhwymzaPe/Mvd650jMyG3Dp5zoQjtJBSSAHUg0daPavfqQ+uNcAGVFmU+/eNW/oyNrGwCyiKLt8zm0dKOJAU4mCViUDyRFSle7WHs8zxwZqe4FxYAJQfT6fdttqKgnIRYYgEE1xx5zhw0SbnvXm5/V6E0aZbMME5M4UBKBC6OeAaw9i7oppbqbNT5rRIfpNyAWYzuipwgx0eGHfcw/UjL1HBl90RGP09HD15p2Xpn8LBIEwcNPn80XApAAJZEPcfIq+TdX3dsBmtebMmpxV0BfXa17eeWn69wjMJCLDuPUFJxQigYwZ3RiRXPremB8swVKAnrUCOjlU88pbl6edB8bQawg9ZTLOiykoCagMcC+tGfP8sOxKV1uzfzli4nMhHsxBBjCv12vkcTmD3r4y7TtglOiIF0Ef9YxzbxVmBmqpGvfsb/YfrbCrTzxcFzz+QdPgMizAdJDRjPMNmiQOBLEFyn3ICbgWVIYa2hf4Oyrs6v0AdgX3Ss/IoV3zhh5CwMpJAYsDOSkCCKTRT38AB6KGXC2Vocb2lv72SkfkvviL0t3IKJtYUDmWQUrw5FD1Fisg0FHS75cpQPnSmjHPvvn+zkqHuiTZRRADO48YVuU2riFQMaATi3s3tVSNv2lWphyTmhL4zF+7eW+P5ycsgCB587O3NfsPpQKBaIrrpv13cHfTtUeBCsSDG7mYMQ0UHQSJTUADtN9HnYc1UUDKsCu4VzcG2lq9gysQMHnYL0f0u8osQT8SbQHGfJQWBLF9KmbU62jpf1pO+1OFCuEzw1XbX/fNOAeExCHsQPmJxb0bsgSlHLZThVxTGuLim8DE5l/vPPPN3xWvZVJjNnA+5Rn55P2ma48D1cZ2bFHWNZQ1CBJRxhpAGBjbemHWKSuwNY2Bj96dO/QYUHNkYd/Ge6vH30h3HQhQ50DtpnyAIC6hNftJbSV7jmhMdI85v57nDq9Ody7ApKb80zlQ+9KeqwmDQlYgSJKl5wOWaUyoyo223oYXDvbVXyRPIEgyAeoFRfQtjLhRcOuFWafO/lX5qiqO5RyFAoHJrG4CG912ceaXZ4artucKKyQI0qxRSJmGnBm4W72DK570jOyziWOWotAgSJN/6TeQR8RxILjDN+PsV8NV26zW2ISq3Pi0r2GjDopPrfICggySyiSwEFnADNCB3vrfEKAQBQBBBijIHRZWlaFigcDiul+SPlYGVKTqYyFVGfjwqmdD12BtN6IPFRQEGdaUEan62Onr1VsiGqPy+WFV8e/t8awvJggs1pQRcTVmrKy6djddW7rKE+iwK7gnVKW/9Y871h/11/UgFkmKAoIsUZAU5gSc++cPLFlWF9zV3l//4v4/G/qIYooCghxQkPDGz3it4sDCC7JCRE4oiIEZOGNVyuh/xuvMooAgDyjI7aVzISIvKDnkZbJiQuTIO6oU4n+VfWmDvwAjdwAAAABJRU5ErkJggg=='/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 31px 20px;
+
+  @media (min-width: $smartphones) {
+    width: 35px;
+    height: 23px;
+
+    background-size: 35px 23px;
+
+    top: -1px;
+    left: -5px;
+  }
+
+  @media (min-width: $wsvga) {
+    width: 58px;
+    height: 46px;
+
+    background-size: 58px 46px;
+
+    top: -7px;
+    left: -9px;
+  }
+
+  @media (min-width: $laptop) {
+    width: 53px;
+    height: 42px;
+
+    background-size: 53px 42px;
+
+    top: -7px;
+    left: -7px;
   }
 }

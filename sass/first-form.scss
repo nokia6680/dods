@@ -76,3 +76,15 @@
     }
   }
 }
+
+@media (min-width: $laptop) {
+  .first-form {
+    &__submit {
+      font: {
+        size: 1.938em;
+      }
+
+      margin-top: 15px;
+    }
+  }
+}

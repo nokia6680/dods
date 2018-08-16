@@ -1,5 +1,5 @@
 .second-item {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -8,6 +8,19 @@
 
   &--agreement {
     margin-top: 7px;
+    margin-bottom: 3px;
+    align-items: flex-start;
+  }
+
+  &--personal {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    align-items: flex-start;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $text-white;
   }
 
   &__label--code {
@@ -25,7 +38,19 @@
 
   &__label--agreement {
     font: {
-      size: 1em;
+      size: 0.625em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-white;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__label--personal {
+    font: {
+      size: 0.625em;
       weight: 900;
       family: $main-font;
     }
@@ -76,16 +101,28 @@
   }
 }
 
-.second-item__input--checkbox + label {
-  @include checkbox-default;
+.second-item__input--agreement + label {
+  @include checkbox-default-1;
 }
 
-.second-item__input--checkbox + label::before {
-  @include custom-checkbox;
+.second-item__input--agreement + label::before {
+  @include custom-checkbox-1;
 }
 
-.second-item__input--checkbox:checked + label::after {
-  @include checkbox-checked;
+.second-item__input--agreement:checked + label::after {
+  @include checkbox-checked-1;
+}
+
+.second-item__input--personal + label {
+  @include checkbox-default-2;
+}
+
+.second-item__input--personal + label::before {
+  @include custom-checkbox-2;
+}
+
+.second-item__input--personal:checked + label::after {
+  @include checkbox-checked-2;
 }
 
 
@@ -96,6 +133,16 @@
       margin-top: 20px;
     }
 
+    &--personal {
+      margin-top: 4px;
+      margin-bottom: 3px;
+    }
+
+    &__link {
+      text-decoration: underline;
+      color: $text-white;
+    }
+
     &__label--code {
       font: {
         size: 1.5em;
@@ -104,7 +151,13 @@
 
     &__label--agreement {
       font: {
-        size: 1.188em;
+        size: 0.875em;
+      }
+    }
+
+    &__label--personal {
+      font: {
+        size: 0.875em;
       }
     }
 
@@ -137,6 +190,10 @@
       margin-top: 30px;
     }
 
+    &--personal {
+      margin-top: 20px;
+    }
+
     &__label--code {
       font: {
         size: 1.75em;
@@ -144,6 +201,12 @@
     }
 
     &__label--agreement {
+      font: {
+        size: 1.250em;
+      }
+    }
+
+    &__label--personal {
       font: {
         size: 1.250em;
       }
@@ -175,6 +238,10 @@
       margin-top: 40px;
     }
 
+    &--personal {
+      margin-top: 30px;
+    }
+
     &__label--code {
       font: {
         size: 2em;
@@ -182,6 +249,12 @@
     }
 
     &__label--agreement {
+      font: {
+        size: 1.50em;
+      }
+    }
+
+    &__label--personal {
       font: {
         size: 1.50em;
       }
@@ -202,6 +275,60 @@
 
       width: 450px;
       margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $laptop) {
+  .second-item {
+    &--agreement {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    &--personal {
+      margin-top: 20px;
+    }
+
+    &__label--code {
+      font: {
+        size: 1.313em;
+      }
+    }
+
+    &__label--agreement {
+      font: {
+        size: 1.063em;
+      }
+    }
+
+    &__label--personal {
+      font: {
+        size: 1.063em;
+      }
+    }
+
+    &__input--code {
+      font: {
+        size: 3.125em;
+      }
+
+      margin-top: 10px;
+      width: 100%;
+
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__disclaimer {
+      font: {
+        size: 0.787em;
+      }
+
+      width: 250px;
+      margin-top: 5px;
     }
   }
 }
