@@ -20,3 +20,10 @@
     transition: 0.8s ease-in-out;
   }
 }
+
+@media (min-width: $wide-netbooks) and (min-height: 768px) {
+  .main-reg {
+    margin-top: 0;
+    transition: 0.8s ease-in-out;
+  }
+}

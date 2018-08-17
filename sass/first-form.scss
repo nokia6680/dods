@@ -88,3 +88,32 @@
     }
   }
 }
+
+@media (min-width: $wide-netbooks) {
+  .first-form {
+    width: 360px;
+    &__submit {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .first-form {
+    width: 488px;
+    &__submit {
+      font: {
+        size: 2.625em;
+      }
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .first-form {
+    &__submit {
+      margin-top: 15px;
+    }
+  }
+}

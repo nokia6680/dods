@@ -112,3 +112,23 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .counter-item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &__nr {
+      font: {
+        size: 3.906em;
+      }
+    }
+
+    &__name {
+      font: {
+        size: 1.250em;
+      }
+    }
+  }
+}

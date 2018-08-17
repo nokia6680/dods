@@ -92,3 +92,14 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .counter-list {
+    padding: 16px 10px;
+
+    &::after {
+      top: -7px;
+      left: -7px;
+    }
+  }
+}

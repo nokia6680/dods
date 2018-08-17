@@ -24,3 +24,12 @@
     bottom: 5px;
   }
 }
+
+@media (min-width: $hd) {
+  .footer-social {
+    min-width: 360px;
+
+    bottom: 10px;
+    margin-right: 140px;
+  }
+}

@@ -141,14 +141,6 @@
 
 @media (min-width: $netbooks) {
   .header-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    width: 100%;
-
-    position: absolute;
     bottom: -55px;
     left: 0;
 
@@ -160,40 +152,17 @@
     &__locate {
       font: {
         size: 1.375em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-      text-transform: uppercase;
-
-      border: 2px solid #000;
-      border-top: none;
-
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
-
-      background-color: $btn-city;
 
       padding-left: 25px;
       padding-right: 130px;
       padding-top: 5px;
       padding-bottom: 5px;
 
-      text-align: left;
-
-      position: relative;
-
       &::after {
-        position: absolute;
-        content: '';
-
         width: 41px;
         height: 41px;
 
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 41 41'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bisolation:isolate;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Ecity%3C/title%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Слой_1-2' data-name='Слой 1'%3E%3Cimage id='Vector_Smart_Object' data-name='Vector Smart Object' class='cls-1' width='41' height='41' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAACXBIWXMAAAsSAAALEgHS3X78AAADPElEQVRYR+3XQYhVVRgH8N83Mw2SYIkTWFPgItCkQINCKJuojYGLFtGmhUFtpM0sXLSKloKLaBaD7UMjZhEZQSSDtYoBIXEjBEEwYWCkGZEJw2lxz8Uzr7nvvDe+pwb94ePce77/9z//Oe/cc85IKRlVYA++xJ4Nct8j9YkXu3QnjAgRcRgreAUr+X00qM1OLRB4F2vWz8xa7o+embyI+RwnDDCTVRMVg/fjdDHQdbyf27bvdOa1Jj8r6veN1SQew/likB+wN+f25vc2dx4/3VGTeA6/FAN8je09nO25P/XE+E3ibdwsxD/AZAd3MudLk1+NzSSmsFCI/o0jtbpceyTz29qFrDc6k9iB5ULwMg7U6no0DuS6VmMZL4/EJJ7Ej4XYCmZrdR1as7m+1bp22ybxKv4ohD7GlpqZiuaWrJN6YjiTmg36vUJgDcdqBoYJHLP+ADghb/xVk9iKpaL4Gg7VBt1M4JD1P/kStvY1iV24UBRdwu7aYLcT2J3Hace8gF0bmsQcrhTkhPnaIKMIvNkz7hXMtfkJiIijOIsZ9wZmcDb7MhERJ7Go2Vxv4I0+xXcC72h8TGExIk5O4M+c/BkHU0qnuqr7ISKmI+KJiHg6t9O1mg6cwkGNH7K/Sc3nv7NYIwOvSc0X+oXmry/X1Y3cX90ZrF+TD+a+ndnXZFdR1aTmqDzTY6wrzmDHMCbLmLIJRMTD+BaP567f8Sm+0XyZD2l2i9fxAA7ju4h4IaV0+d+KFQw7k5oFXZ6/n2CmQ2cm51vuCqaGncnNmJwv8h/pOMoKfmReP83RmcQEVnPuEqb7GSzqpt06VVYxMYzJYf+lfUZz3YLjKaWb/cgtMu94fp3V6AyMYU0+Xzx/3snaGCW/1KliWJOP5PZqSum3vsweZP7V/NrqDIRhTU7m9npfVjfaulZnIAxr8q5g7CYj4q2IeKrG64dNnTiDIl+1FvFrRLxU43dh3DN5X40wCMY6kymlhYgILKeULjaPw2OsJiGl9GGNU8O4f+6R4H+To8J/wuQURMRreHSD/FzPF7k/t9siYn4Dfg3bcru/p/7Z4vloRPyVn1dTSkvtfe6cW/e5eynObeY+eVfwD/w22qCwl1dJAAAAAElFTkSuQmCC'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        background-repeat: no-repeat;
         background-size: 41px 41px;
 
         top: 5px;
@@ -204,38 +173,18 @@
     &__additional {
       font: {
         size: 0.75em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-      text-transform: uppercase;
     }
 
     &__about {
       font: {
         size: 1.375em;
-        weight: 900;
-        family: $main-font;
       }
-
-      color: $text-black;
-      line-height: 1;
-      text-transform: uppercase;
-
-      border: 2px solid #000;
-      border-top: none;
-
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
 
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 10px;
       padding-bottom: 10px;
-
-      background-color: $btn-about;
 
       order: 1;
 
@@ -245,35 +194,174 @@
     &__faq {
       font: {
         size: 1.375em;
-        weight: 900;
-        family: $main-font;
       }
-
-      color: $text-black;
-      line-height: 1;
-      text-transform: uppercase;
-
-      border: 2px solid #000;
-      border-top: none;
-
-      border-bottom-right-radius: 25px;
-      border-bottom-left-radius: 25px;
 
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 10px;
       padding-bottom: 10px;
 
-      background-color: $btn-faq;
-
       order: 2;
     }
 
     &__right {
-      display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .header-buttons {
+    bottom: -70px;
+    left: 0;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    z-index: -1;
+
+    &__locate {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 35px;
+      padding-right: 175px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      &::after {
+        width: 56px;
+        height: 56px;
+
+        background-size: 56px 56px;
+
+        top: 5px;
+        right: 30px;
+      }
+    }
+
+    &__additional {
+      font: {
+        size: 0.625em;
+      }
+    }
+
+    &__about {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      order: 1;
+
+      margin-right: 20px;
+    }
+
+    &__faq {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .header-buttons {
+    bottom: -70px;
+    left: 0;
+
+    padding-left: 104px;
+    padding-right: 104px;
+
+    z-index: -1;
+
+    &__locate {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 35px;
+      padding-right: 175px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      &::after {
+        width: 56px;
+        height: 56px;
+
+        background-size: 56px 56px;
+
+        top: 5px;
+        right: 30px;
+      }
+    }
+
+    &__additional {
+      font: {
+        size: 0.625em;
+      }
+    }
+
+    &__about {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      order: 1;
+
+      margin-right: 20px;
+    }
+
+    &__faq {
+      font: {
+        size: 1.875em;
+      }
+
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+
+      order: 2;
     }
   }
 }

@@ -226,3 +226,39 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .popup-city {
+    width: 505px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+    margin-top: 20%;
+    transform: translate(-50%, -20%);
+
+    &__controls {
+      justify-content: space-between;
+    }
+
+    &__title {
+      font: {
+        size: 2.625em;
+      }
+      margin-top: 0;
+    }
+
+    &__no {
+      font: {
+        size: 2.625em;
+      }
+    }
+
+    &__yes {
+      font: {
+        size: 2.625em;
+      }
+    }
+  }
+}

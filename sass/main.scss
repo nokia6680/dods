@@ -5,4 +5,150 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: space-evenly;
+
+  position: relative;
+}
+
+@media (min-width: $laptop) {
+  .main {
+    &__disclaimer {
+      position: absolute;
+      display: block;
+
+      background-image: url('../img/shape-bg.png');
+      background-repeat: no-repeat;
+      background-size: 347px 130px;
+
+      width: 347px;
+      height: 130px;
+
+      top: 80%;
+      left: 10%;
+
+      transform: translate(-30%, -50%);
+
+      font: {
+        size: 1.125em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 35px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .main {
+    &__disclaimer {
+      position: absolute;
+      display: block;
+
+      background-image: url('../img/shape-bg.png');
+      background-repeat: no-repeat;
+      background-size: 347px 130px;
+
+      width: 347px;
+      height: 130px;
+
+      top: 80%;
+      left: 10%;
+
+      transform: translate(-30%, -50%);
+
+      font: {
+        size: 1.125em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 35px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .main {
+    &__disclaimer {
+      position: absolute;
+      display: block;
+
+      background-image: url('../img/shape-bg.png');
+      background-repeat: no-repeat;
+      background-size: 434px 162px;
+
+      width: 434px;
+      height: 162px;
+
+      top: 80%;
+      left: 10%;
+
+      transform: translate(-30%, -50%);
+
+      font: {
+        size: 1.475em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 38px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .main {
+    &__disclaimer {
+      position: absolute;
+      display: block;
+
+      background-image: url('../img/shape-bg.png');
+      background-repeat: no-repeat;
+      background-size: 512px 203px;
+
+      width: 512px;
+      height: 203px;
+
+      top: 85%;
+      left: 10%;
+
+      transform: translate(-30%, -50%);
+
+      font: {
+        size: 1.75em;
+        family: $main-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 55px;
+      padding-left: 15px;
+    }
+  }
 }

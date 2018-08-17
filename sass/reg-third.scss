@@ -1,5 +1,5 @@
 .reg-third {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -28,5 +28,11 @@
 @media (min-width: $laptop) {
   .reg-third {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .reg-third {
+    margin-top: 35px;
   }
 }

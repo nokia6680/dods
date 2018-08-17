@@ -27,6 +27,36 @@
     box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
     -webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
     -moz-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: ' ';
+      background-color: #000;
+
+      bottom: 6px;
+      left: 6px;
+
+      width: 4px;
+      height: 4px;
+
+      border-radius: 5px;
+    }
+
+    &::after {
+      position: absolute;
+      content: ' ';
+      background-color: #000;
+
+      bottom: 6px;
+      right: 6px;
+
+      width: 4px;
+      height: 4px;
+
+      border-radius: 5px;
+    }
   }
 }
 
@@ -77,6 +107,26 @@
       margin-top: 40px;
 
       border-radius: 20px;
+
+      &::before {
+        bottom: 10px;
+        left: 10px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
+
+      &::after {
+        bottom: 10px;
+        right: 10px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
     }
   }
 }
@@ -95,6 +145,63 @@
       margin-top: 16px;
 
       border-radius: 15px;
+
+      &::before {
+        bottom: 6px;
+        left: 6px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
+
+      &::after {
+        bottom: 6px;
+        right: 6px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .index-counter {
+    &__title {
+      font: {
+        size: 1.75em;
+      }
+
+      line-height: 1.825em;
+
+      padding: 0 25px;
+      margin-top: 20px;
+
+      border-radius: 15px;
+
+      &::before {
+        bottom: 10px;
+        left: 10px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
+
+      &::after {
+        bottom: 10px;
+        right: 10px;
+
+        width: 6px;
+        height: 6px;
+
+        border-radius: 5px;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 .reg-first {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -40,5 +40,12 @@
     margin-top: 16px;
     padding-left: 1px;
     padding-right: 1px;
+  }
+}
+
+
+@media (min-width: $widebooks) {
+  .reg-first {
+    margin-top: 20px;
   }
 }

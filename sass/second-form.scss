@@ -77,10 +77,25 @@
 @media (min-width: $laptop) {
   .second-form {
     width: 316px;
-    
+
     &__submit {
       font: {
         size: 1.938em;
+      }
+
+      padding: 10px 20px;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .second-form {
+    width: 416px;
+
+    &__submit {
+      font: {
+        size: 2.625em;
       }
 
       padding: 10px 20px;

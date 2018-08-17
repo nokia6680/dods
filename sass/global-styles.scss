@@ -46,6 +46,20 @@ body {
     background-size: 1259px 509px, 1920px 1080px;
     background-position: center center, top center;
   }
+
+  @media (min-width: $widebooks) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1484px 586px, 1920px 1200px;
+    background-position: center center, top center;
+  }
+
+  @media (min-width: $hd) {
+    background-image: url('../img/items-bg.png'), url('../img/desktop-bg.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1788px 707px, 1920px 1080px;
+    background-position: center center, top center;
+  }
 }
 
 img {

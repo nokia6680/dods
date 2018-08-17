@@ -332,3 +332,57 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .second-item {
+    &--agreement {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    &--personal {
+      margin-top: 20px;
+    }
+
+    &__label--code {
+      font: {
+        size: 1.75em;
+      }
+    }
+
+    &__label--agreement {
+      font: {
+        size: 1.375em;
+      }
+    }
+
+    &__label--personal {
+      font: {
+        size: 1.375em;
+      }
+    }
+
+    &__input--code {
+      font: {
+        size: 4.125em;
+      }
+
+      margin-top: 10px;
+      width: 100%;
+
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__disclaimer {
+      font: {
+        size: 1em;
+      }
+
+      width: 256px;
+      margin-top: 5px;
+    }
+  }
+}

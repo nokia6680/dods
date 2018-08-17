@@ -150,3 +150,25 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .header-nav {
+    &__upper {
+      padding-left: 140px;
+      transition: 0.5s ease-in;
+    }
+
+    &__logo {
+      background-size: 261px 37px;
+
+      width: 267px;
+      height: 37px;
+    }
+
+    &__tricolor {
+      width: 256px;
+      height: auto;
+      margin-right: 140px;
+    }
+  }
+}

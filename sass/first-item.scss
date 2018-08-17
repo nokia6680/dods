@@ -199,3 +199,38 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .first-item {
+    margin-bottom: 25px;
+    position: relative;
+
+    &__label {
+      font: {
+        size: 1.438em;
+      }
+
+      margin-bottom: 8px;
+    }
+
+    &__input {
+      font: {
+        size: 2em;
+      }
+
+      padding-left: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 15px;
+    }
+
+    &__required {
+      bottom: -18px;
+      left: 0;
+
+      font: {
+        size: 1em;
+      }
+    }
+  }
+}
