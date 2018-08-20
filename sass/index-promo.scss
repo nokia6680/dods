@@ -12,12 +12,28 @@
     line-height: 1;
     text-align: center;
 
-    width: 310px;
+    width: 300px;
 
     margin-bottom: 0;
     margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &__time--ekaterinburg {
+    display: block;
+  }
+
+  &__time--chelyabinsk {
+    display: none;
+  }
+
+  &__time--volgograd {
+    display: none;
+  }
+
+  &__time--krasnodar {
+    display: none;
   }
 }
 

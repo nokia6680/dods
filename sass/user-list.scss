@@ -1,0 +1,46 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  position: absolute;
+
+  bottom: -75px;
+  left: 0;
+
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  z-index: -1;
+
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+@media (min-width: $smartphones) {
+  .user-list {
+    bottom: -78px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .user-list {
+    bottom: -85px;
+  }
+}
+
+@media (min-width: $wide-netbooks) {
+  .user-list {
+    bottom: -91px;
+  }
+}
+
+@media (min-width: $hd) {
+  .user-list {
+    bottom: -111px;
+  }
+}

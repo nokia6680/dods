@@ -8,6 +8,35 @@
 
   width: 100%;
 
+  &--agreement {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    .first-item__input {
+      order: 2;
+    }
+
+    .first-item__label {
+      order: 1;
+    }
+
+    .first-item__list {
+      order: 3;
+    }
+  }
+
+  &--name,
+  &--phone {
+    .first-item__input {
+      order: 2;
+    }
+
+    .first-item__label {
+      order: 1;
+    }
+  }
+
   &__label {
     font: {
       size: 0.875em;
@@ -43,6 +72,21 @@
     padding-top: 2px;
     padding-bottom: 2px;
     padding-right: 5px;
+  }
+
+  &__input--number::-webkit-inner-spin-button,
+  &__input--number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input:focus ~ label,
+  label:active {
+    color: $yellow-hover;
+    border-color: $yellow-hover;
+  }
+
+  input:focus {
+    border-color: $yellow-hover;
   }
 
   &__required {

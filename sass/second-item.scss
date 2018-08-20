@@ -6,6 +6,30 @@
 
   width: 100%;
 
+  &--code {
+    .second-item__input {
+      order: 2;
+    }
+
+    .second-item__label {
+      order: 1;
+    }
+
+    .second-item__disclaimer {
+      order: 3;
+    }
+
+    input:focus ~ label,
+    label:active {
+      color: $yellow-hover;
+      border-color: $yellow-hover;
+    }
+
+    input:focus {
+      border-color: $yellow-hover;
+    }
+  }
+
   &--agreement {
     margin-top: 7px;
     margin-bottom: 3px;
@@ -76,12 +100,11 @@
     background-color: rgba(255, 255, 255, 0.2);
     border: 3px solid #fff;
     margin-top: 2px;
+  }
 
-    &:hover + label {
-      border-color: $yellow-hover;
-      color: $yellow-hover;
-      pointer-events: none;
-    }
+  &__input--code::-webkit-inner-spin-button,
+  &__input--code::-webkit-outer-spin-button {
+    -webkit-appearance: none;
   }
 
   &__disclaimer {

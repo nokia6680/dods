@@ -50,7 +50,10 @@
         </div>
         <!--Нижняя часть шапки-->
         <div class="header-nav__lower">
-          <img class="header-nav__tricolor" src="img/tricolor.svg" />
+          <b class="header-nav__age">0+</b>
+          <a class="header-nav__trilink" href="#">
+            <img class="header-nav__tricolor" src="img/tricolor.svg" />
+          </a>
         </div>
       </nav>
       <!--Блок кнопок меню - только для десктоп версии-->
@@ -94,7 +97,7 @@
         </div>
         <!--Блок предложения поучаствовать во всем этом-->
         <div class="main-index__promo index-promo">
-          <p class="index-promo__description">Хотите бесплатно попасть на эксклюзивный показ 5&nbsp;сезона Щенячьего патруля в&nbsp;городе&nbsp;<span class="index-promo__city">Новосибирск</span>?</p>
+          <p class="index-promo__description">Хотите бесплатно попасть на эксклюзивный показ 5&nbsp;сезона&nbsp;Щенячьего&nbsp;патруля<br /><span class="index-promo__time index-promo__time--ekaterinburg" id="time-ekaterinburg">15 сентября в 12:00?</span><span class="index-promo__time index-promo__time--chelyabinsk" id="time-chelyabinsk">16 сентября в 12:00?</span><span class="index-promo__time index-promo__time--volgograd" id="time-volgograd">22 сентября в 12:00?</span><span class="index-promo__time index-promo__time--krasnodar" id="time-krasnodar">23 сентября в 12:00?</span></p>
         </div>
         <!--Блок отображения свободных мест-->
         <div class="main-index__place index-place">
@@ -128,19 +131,33 @@
           <form class="reg-first__form first-form" method="post" action="#" id="first-form">
             <ul class="first-form__list first-list">
               <li class="first-list__item first-item first-item--name">
-                <label class="first-item__label" for="name">Ваше имя:</label>
-                <input class="first-item__input" type="text" name="personal-details" id="name" required />
+                <input class="first-item__input" type="text" name="personal-details" id="name" autocomplete="off" required />
+                <label class="first-item__label" for="name">Ваше имя и фамилия:</label>
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--phone">
+                <input class="first-item__input first-item__input--number" type="number" name="phone-details" id="phone" autocomplete="off" required />
                 <label class="first-item__label" for="phone">Номер телефона:</label>
-                <input class="first-item__input" type="number" name="phone-details" id="phone" required />
                 <span class="first-item__required">Это поле обязательно к заполнению!</span>
               </li>
               <li class="first-list__item first-item first-item--agreement">
-                <label class="first-item__label" for="agreement">Номер договора Триколор ТВ:</label>
-                <input class="first-item__input" type="number" name="agreement-details" id="agreement" required />
-                <span class="first-item__required">Это поле обязательно к заполнению!</span>
+                <input class="first-item__input first-item__input--number" type="number" name="agreement-details" id="agreement" autocomplete="off" required />
+                <label class="first-item__label" for="agreement">Выберите количество людей:</label>
+                <!--Список для количества человек-->
+                <ul class="first-item__list user-list">
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="one">1</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="two">2</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="three">3</span>
+                  </li>
+                  <li class="user-list__item user-item">
+                    <span class="user-item__nr" id="four">4</span>
+                  </li>
+                </ul>
               </li>
             </ul>
             <button class="first-form__submit" type="submit">Отправить</button>
@@ -151,8 +168,8 @@
           <form class="reg-second__form second-form" method="post" action="#" id="second-form">
             <ul class="second-form__list second-list">
               <li class="second-list__item second-item second-item--code">
+                <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" autocomplete="off" required />
                 <label class="second-item__label second-item__label--code" for="sms-code">Введите код из SMS:</label>
-                <input class="second-item__input second-item__input--code" type="number" name="sms-code" id="sms-code" required />
                 <span class="second-item__disclaimer">Ваш телефон нужен для отправки приглашения</span>
               </li>
               <li class="second-list__item second-item second-item--agreement">
@@ -208,12 +225,34 @@
   </div>
   <!--Попап вопроса про город-->
   <div class="overlay overlay--on">
+    <!--Выбран ли верный город?-->
     <div class="popup-city popup-city__hidden">
       <p class="popup-city__title">Ваш город <span class="popup-city__name">Новосибирск</span>?</p>
       <div class="popup-city__controls">
         <button class="popup-city__yes" type="button">Да</button>
         <button class="popup-city__no" type="button">Нет</button>
       </div>
+    </div>
+    <!--Список городов-->
+    <div class="popup-choose popup-choose__hidden">
+      <p class="popup-choose__title">Выберите ваш город:</p>
+      <ul class="popup-choose__list">
+        <li class="popup-choose__item" id="ekaterinburg">
+          <span class="popup-choose__name">Екатеринбург</span>
+        </li>
+        <li class="popup-choose__item" id="chelyabinsk">
+          <span class="popup-choose__name">Челябинск</span>
+        </li>
+        <li class="popup-choose__item" id="volgograd">
+          <span class="popup-choose__name">Волгоград</span>
+        </li>
+        <li class="popup-choose__item" id="krasnodar">
+          <span class="popup-choose__name">Краснодар</span>
+        </li>
+        <li class="popup-choose__item" id="other">
+          <span class="popup-choose__name">Другой</span>
+        </li>
+      </ul>
     </div>
   </div>
   <!--Попапы элементов меню-->

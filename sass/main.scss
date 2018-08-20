@@ -8,6 +8,8 @@
 
   position: relative;
 
+  z-index: 999;
+
   &__disclaimer {
     display: none;
   }
@@ -21,9 +23,9 @@
 
       background-image: url('../img/shape-bg.png');
       background-repeat: no-repeat;
-      background-size: 347px 130px;
+      background-size: 325px 130px;
 
-      width: 347px;
+      width: 325px;
       height: 130px;
 
       top: 80%;
@@ -44,7 +46,7 @@
       margin: 0;
 
       padding-top: 35px;
-      padding-left: 15px;
+      padding-left: 10px;
     }
   }
 }
@@ -134,7 +136,7 @@
       width: 512px;
       height: 203px;
 
-      top: 85%;
+      top: 70%;
       left: 10%;
 
       transform: translate(-30%, -50%);
