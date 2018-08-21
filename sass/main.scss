@@ -35,18 +35,9 @@
 
       font: {
         size: 1.125em;
-        family: $main-font;
+        family: $ultra-font;
         weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
-      padding-top: 35px;
-      padding-left: 10px;
     }
   }
 }
@@ -71,18 +62,7 @@
 
       font: {
         size: 1.125em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
-      padding-top: 35px;
-      padding-left: 15px;
     }
   }
 }
@@ -107,15 +87,7 @@
 
       font: {
         size: 1.475em;
-        family: $main-font;
-        weight: 900;
       }
-
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
 
       padding-top: 38px;
       padding-left: 15px;
@@ -143,18 +115,9 @@
 
       font: {
         size: 1.75em;
-        family: $main-font;
-        weight: 900;
       }
 
-      color: $text-black;
-      line-height: 1;
-
-      text-align: center;
-      margin: 0;
-
       padding-top: 55px;
-      padding-left: 15px;
     }
   }
 }
