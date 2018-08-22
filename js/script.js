@@ -28,6 +28,7 @@ if (modalSearch) {
 }
 
 var swiper = new Swiper('.swiper-container', {
+  touchReleaseOnEdges: 'true',
   pagination: {
     el: '.swiper-pagination',
     clickable: 'true',
