@@ -21,7 +21,13 @@
 
     position: absolute;
     right: 10px;
-    bottom: 15px;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: $netbooks) {
+  .footer-social {
+    bottom: 5px;
   }
 }
 
@@ -43,13 +49,19 @@
 
     position: absolute;
     right: 10px;
-    bottom: 12px;
+    bottom: 5px;
   }
 }
 
 @media (min-width: $notebooks) {
   .footer-social {
-    bottom: 22px;
+    bottom: 5px;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .footer-social {
+    bottom: 15px;
   }
 }
 
@@ -57,7 +69,7 @@
   .footer-social {
     min-width: 360px;
 
-    bottom: 25px;
+    bottom: 10px;
     margin-right: 140px;
   }
 }

@@ -23,6 +23,24 @@
     margin-bottom: 10px;
   }
 
+  &__date {
+    font: {
+      size: 1em;
+      family: $ultra-font;
+      weight: 900;
+    }
+
+    line-height: 1;
+    text-transform: uppercase;
+    color: $text-black;
+
+    margin-bottom: 5px;
+  }
+
+  &__schedule {
+    display: none;
+  }
+
   &__title {
     font: {
       size: 1em;
@@ -35,7 +53,7 @@
     text-align: center;
 
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   &__disclaimer {
@@ -82,7 +100,7 @@
         size: 1.25em;
       }
 
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &__disclaimer {
@@ -96,6 +114,11 @@
       }
 
       padding-top: 20px;
+    }
+
+    &__date {
+      font-size: 1.25em;
+      margin-bottom: 10px;
     }
   }
 }
@@ -118,7 +141,7 @@
         size: 1.5em;
       }
 
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     &__disclaimer {
@@ -154,7 +177,12 @@
         size: 2.25em;
       }
 
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    &__date {
+      font-size: 1.75em;
+      margin-bottom: 15px;
     }
 
     &__disclaimer {
@@ -185,6 +213,10 @@
 
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    &__date {
+      display: none;
     }
 
     &__schedule {

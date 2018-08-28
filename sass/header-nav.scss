@@ -64,6 +64,20 @@
     text-transform: uppercase;
   }
 
+  &__announce {
+    text-align: center;
+
+    font: {
+      size: 0.625em;
+      weight: 900;
+      family: $main-font;
+    }
+
+    color: $text-blue;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
   &__trilink {
     display: block;
     height: 100%;
@@ -72,7 +86,7 @@
   }
 
   &__tricolor {
-    width: 121px;
+    width: 104px;
     height: auto;
 
     margin-right: 10px;
@@ -104,7 +118,7 @@
     }
 
     &__tricolor {
-      width: 135px;
+      width: 110px;
       margin-right: 14px;
     }
 
@@ -136,7 +150,7 @@
     }
 
     &__tricolor {
-      width: 162px;
+      width: 135px;
       margin-right: 30px;
     }
 
@@ -145,6 +159,23 @@
       font: {
         size: 1.625em;
       }
+    }
+
+    &__announce {
+      font-size: 0.75em;
+      margin-left: auto;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .header-nav {
+    &__announce {
+      font-size: 1em;
+      margin-right: 10px;
+      margin-top: -12px;
     }
   }
 }
@@ -168,7 +199,7 @@
     }
 
     &__tricolor {
-      width: 194px;
+      width: 155px;
       height: auto;
       margin-right: 10px;
     }
@@ -239,8 +270,13 @@
       height: 37px;
     }
 
+    &__announce {
+      font-size: 1.313em;
+      margin-top: -15px;
+    }
+
     &__tricolor {
-      width: 256px;
+      width: 202px;
       height: auto;
       margin-right: 140px;
     }

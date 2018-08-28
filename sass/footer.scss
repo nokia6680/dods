@@ -12,6 +12,7 @@
 
   position: relative;
   padding-top: 8px;
+  padding-bottom: 3px;
 
   &::before {
     position: absolute;
@@ -23,7 +24,7 @@
     width: 240px;
     height: 89px;
 
-    bottom: 29px;
+    bottom: 12px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -45,22 +46,13 @@
     color: $text-white;
     line-height: normal;
     text-transform: uppercase;
-  }
 
-  &__trikolor {
-    font: {
-      size: 0.5em;
-      weight: 700;
-      family: $xtra-font;
-    }
-
-    color: $text-white;
-    line-height: normal;
-    text-transform: uppercase;
+    margin: 0;
   }
 
   &--show {
-    padding-top: 0;
+    padding-top: 8px;
+    padding-bottom: 3px;
     &::before {
       display: none;
     }
@@ -84,6 +76,7 @@
 @media (min-width: $smartphones) {
   .footer {
     padding-top: 10px;
+    padding-bottom: 4px;
 
     &::before {
       background-size: 288px 107px;
@@ -91,7 +84,7 @@
       width: 288px;
       height: 107px;
 
-      bottom: 30px;
+      bottom: 14px;
       left: 50%;
     }
 
@@ -102,7 +95,9 @@
     }
 
     &--show {
-      padding-top: 0;
+      padding-top: 10px;
+      padding-bottom: 4px;
+
       &::before {
         display: none;
       }
@@ -127,15 +122,13 @@
 
 @media (min-width: $wsvga) {
   .footer {
-    padding-top: 10px;
-
     &::before {
       background-size: 288px 107px;
 
       width: 288px;
       height: 107px;
 
-      bottom: 42px;
+      bottom: 15px;
       left: 50%;
     }
 
@@ -150,7 +143,6 @@
     }
 
     &--show {
-      padding-top: 0;
       &::before {
         display: none;
       }
@@ -174,8 +166,8 @@
 
 @media (min-width: $tablets) {
   .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 6px;
 
     &::before {
       background-size: 380px 142px;
@@ -183,7 +175,7 @@
       width: 380px;
       height: 142px;
 
-      bottom: 67px;
+      bottom: 24px;
     }
 
     &__copyright {
@@ -199,9 +191,12 @@
     }
 
     &--show {
+      padding-top: 14px;
+      padding-bottom: 6px;
+
       &::after {
         background-size: 518px 246px;
-        bottom: 10px;
+        bottom: -15px;
         width: 518px;
         height: 246px;
       }
@@ -211,8 +206,8 @@
 
 @media (min-width: $laptop) {
   .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &::before {
       background-size: 402px 150px;
@@ -220,16 +215,18 @@
       width: 402px;
       height: 150px;
 
-      bottom: 49px;
+      bottom: 38px;
     }
 
     &__copyright {
       font: {
-        size: 0.438em;
+        size: 0.5em;
       }
     }
 
     &--show {
+      padding-top: 20px;
+      padding-bottom: 20px;
       &::after {
         background-size: 518px 246px;
         bottom: 0;
@@ -248,7 +245,7 @@
       width: 402px;
       height: 150px;
 
-      bottom: 50px;
+      bottom: 38px;
 
       transition: 0.8s ease-in-out;
     }
@@ -263,7 +260,7 @@
       width: 528px;
       height: 197px;
 
-      bottom: 46px;
+      bottom: 35px;
 
       transition: 0.8s ease-in-out;
     }
@@ -278,7 +275,7 @@
       width: 528px;
       height: 197px;
 
-      bottom: 46px;
+      bottom: 35px;
 
       transition: 0.8s ease-in-out;
     }
@@ -287,25 +284,40 @@
 
 @media (min-width: $notebooks) {
   .footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &::before {
-      bottom: 57px;
+      bottom: 35px;
     }
 
     &__trikolor {
       font-size: 1.125em;
+    }
+
+    &--show {
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }
 
 @media (min-width: $widebooks) {
   .footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    &__copyright {
+      font-size: 0.625em;
+    }
+
+    &::before {
+      bottom: 49px;
+    }
 
     &--show {
+      padding-top: 26px;
+      padding-bottom: 26px;
       &::after {
         background-size: 704px 269px;
         bottom: 0;
@@ -318,22 +330,15 @@
 
 @media (min-width: $hd) {
   .footer {
-    padding-top: 25px;
-    padding-bottom: 20px;
-
     &::before {
       background-size: 528px 197px;
 
       width: 528px;
       height: 197px;
 
-      bottom: 80px;
+      bottom: 49px;
 
       transition: 0.8s ease-in-out;
-    }
-
-    &__trikolor {
-      font-size: 1.5em;
     }
 
     &--show {
