@@ -23,9 +23,16 @@
     width: 240px;
     height: 89px;
 
-    bottom: 18px;
+    bottom: 29px;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   &__copyright {
@@ -39,6 +46,39 @@
     line-height: normal;
     text-transform: uppercase;
   }
+
+  &__trikolor {
+    font: {
+      size: 0.5em;
+      weight: 700;
+      family: $xtra-font;
+    }
+
+    color: $text-white;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &--show {
+    padding-top: 0;
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../img/footer-show.svg');
+      background-repeat: no-repeat;
+      background-size: 271px 120px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: 271px;
+      height: 120px;
+      z-index: -1;
+    }
+  }
 }
 
 @media (min-width: $smartphones) {
@@ -51,13 +91,34 @@
       width: 288px;
       height: 107px;
 
-      bottom: 22px;
+      bottom: 30px;
       left: 50%;
     }
 
     &__copyright {
       font: {
         size: 0.438em;
+      }
+    }
+
+    &--show {
+      padding-top: 0;
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/footer-show.svg');
+        background-repeat: no-repeat;
+        background-size: 345px 164px;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 345px;
+        height: 164px;
+        z-index: -1;
       }
     }
   }
@@ -74,13 +135,38 @@
       width: 288px;
       height: 107px;
 
-      bottom: 26px;
+      bottom: 42px;
       left: 50%;
     }
 
     &__copyright {
       font: {
         size: 0.5em;
+      }
+    }
+
+    &__trikolor {
+      font-size: 0.75em;
+    }
+
+    &--show {
+      padding-top: 0;
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url('../img/footer-show.svg');
+        background-repeat: no-repeat;
+        background-size: 431px 205px;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 431px;
+        height: 205px;
+        z-index: -1;
       }
     }
   }
@@ -97,7 +183,7 @@
       width: 380px;
       height: 142px;
 
-      bottom: 45px;
+      bottom: 67px;
     }
 
     &__copyright {
@@ -105,12 +191,27 @@
         size: 0.75em;
       }
     }
+
+    &__trikolor {
+      font: {
+        size: 1em;
+      }
+    }
+
+    &--show {
+      &::after {
+        background-size: 518px 246px;
+        bottom: 10px;
+        width: 518px;
+        height: 246px;
+      }
+    }
   }
 }
 
 @media (min-width: $laptop) {
   .footer {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
 
     &::before {
@@ -119,12 +220,21 @@
       width: 402px;
       height: 150px;
 
-      bottom: 35px;
+      bottom: 49px;
     }
 
     &__copyright {
       font: {
         size: 0.438em;
+      }
+    }
+
+    &--show {
+      &::after {
+        background-size: 518px 246px;
+        bottom: 0;
+        width: 518px;
+        height: 246px;
       }
     }
   }
@@ -138,7 +248,7 @@
       width: 402px;
       height: 150px;
 
-      bottom: 35px;
+      bottom: 50px;
 
       transition: 0.8s ease-in-out;
     }
@@ -153,7 +263,7 @@
       width: 528px;
       height: 197px;
 
-      bottom: 31px;
+      bottom: 46px;
 
       transition: 0.8s ease-in-out;
     }
@@ -168,9 +278,40 @@
       width: 528px;
       height: 197px;
 
-      bottom: 31px;
+      bottom: 46px;
 
       transition: 0.8s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &::before {
+      bottom: 57px;
+    }
+
+    &__trikolor {
+      font-size: 1.125em;
+    }
+  }
+}
+
+@media (min-width: $widebooks) {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--show {
+      &::after {
+        background-size: 704px 269px;
+        bottom: 0;
+        width: 704px;
+        height: 269px;
+      }
     }
   }
 }
@@ -179,15 +320,29 @@
   .footer {
     padding-top: 25px;
     padding-bottom: 20px;
+
     &::before {
       background-size: 528px 197px;
 
       width: 528px;
       height: 197px;
 
-      bottom: 52px;
+      bottom: 80px;
 
       transition: 0.8s ease-in-out;
+    }
+
+    &__trikolor {
+      font-size: 1.5em;
+    }
+
+    &--show {
+      &::after {
+        background-size: 939px 358px;
+        bottom: 0;
+        width: 939px;
+        height: 358px;
+      }
     }
   }
 }

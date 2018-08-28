@@ -46,6 +46,9 @@
 
     position: relative;
     z-index: 1000;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   &__age {
@@ -93,6 +96,11 @@
 
       width: 183px;
       height: 26px;
+    }
+
+    &__lower {
+      padding-top: 3px;
+      padding-bottom: 3px;
     }
 
     &__tricolor {

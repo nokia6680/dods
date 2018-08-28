@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Щенячий патруль | Новый сезон</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+</head>
+<body class="show-body">
+  <div class="show-wrapper">
+    <!--Шапка сайта-->
+    <header class="header">
+      <nav class="header__nav header-nav">
+        <!--Верхняя часть шапки-->
+        <div class="header-nav__upper">
+          <div class="header-nav__logo">
+            <a class="header-nav__link" href="index.html">
+
+            </a>
+          </div>
+          <!--Меню выдвигающееся-->
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--register" href="#" target="_self">Регистрация</a>
+            </li>
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--about" href="#" target="_self">О шоу</a>
+            </li>
+            <li class="nav-list__item nav-item">
+              <a class="nav-item__link nav-item__link--faq" href="#" target="_self">Вопросы и ответы</a>
+            </li>
+            <li class="nav-list__item nav-item nav-item--city">
+              <a class="nav-item__link nav-item__link--city" href="#" target="_self">Новосибирск<br /></a>
+              <span class="nav-item__disclaimer">(ваш город)</span>
+            </li>
+          </ul>
+          <!--Кнопка открытия меню-->
+          <div class="header-nav__opener header-opener">
+            <button class="header-opener__btn" type="button"></button>
+          </div>
+        </div>
+        <!--Нижняя часть шапки-->
+        <div class="header-nav__lower">
+          <b class="header-nav__age">0+</b>
+          <a class="header-nav__trilink" href="#">
+            <img class="header-nav__tricolor" src="img/trikolor-logo.png" />
+          </a>
+        </div>
+      </nav>
+      <!--Блок кнопок меню - только для десктоп версии-->
+    <!--  <div class="header__buttons header-buttons">
+        <div class="header-buttons__left">
+          <button class="header-buttons__locate" type="button"><span class="header-buttons__text">Новосибирск</span><br /><span class="header-buttons__additional">(ваш город)</span></button>
+        </div>
+        <div class="header-buttons__right">
+          <button class="header-buttons__about" type="button"><span class="header-buttons__text">О шоу</span></button>
+          <button class="header-buttons__faq" type="button"><span class="header-buttons__text">Вопросы и ответы</span></button>
+        </div>
+      </div> -->
+    </header>
+    <!--Основное содержание-->
+    <main class="main">
+      <section class="main-show__content show-content">
+        <p class="show-content__description">НОВЫЕ&nbsp;ПРИКЛЮЧЕНИЯ!&nbsp;НОВЫЕ&nbsp;ДРУЗЬЯ!<br />НОВЫЕ&nbsp;СПАСАТЕЛЬНЫЕ&nbsp;ОПЕРАЦИИ!<br />ТАКИХ&nbsp;ЩЕНЯТ&nbsp;ВЫ&nbsp;ЕЩЕ&nbsp;НЕ&nbsp;ВИДЕЛИ!</p>
+        <h2 class="show-content__title">Премьера новых серий!</h2>
+        <!--Блок с видео-->
+        <div class="show-content__video video-show">
+          <video class="video-show__source" poster="https://via.placeholder.com/245x135">
+            <source src="video/video-promo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <h3 class="show-content__disclaimer">Только на Nickelodeon!</h3>
+        <!--Скрыт на мобильных-->
+        <h3 class="show-content__schedule">С 16 сентября<br />каждое воскресенье<br />в 7:40 МСК</h3>
+      </section>
+    </main>
+    <!--Подвал сайта-->
+    <footer class="footer footer--show">
+      <div class="footer__info">
+        <b class="footer__trikolor">При информационной поддержке Триколора</b>
+        <p class="footer__copyright">&copy; 2018 Viacom. Все права защищены.</p>
+      </div>
+      <ul class="footer__social footer-social">
+        <li class="footer-social__item social-item social-item--yt">
+          <a class="social-item__link" href="https://www.youtube.com/channel/UCw3vK8lNe5SZzL--rMgq-CQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--fb">
+          <a class="social-item__link" href="https://www.facebook.com/NickelodeonRussia" target="_blank"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--vk">
+          <a class="social-item__link" href="https://vk.com/nickelodeonru" target="_blank"><i class="fa fa-vk"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--tw">
+          <a class="social-item__link" href="https://twitter.com/NickTVru" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--in">
+          <a class="social-item__link" href="https://www.instagram.com/nickelodeon_ru/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="footer-social__item social-item social-item--ok">
+          <a class="social-item__link" href="https://ok.ru/group/53695281103021" target="_blank"><i class="fa fa-odnoklassniki"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>

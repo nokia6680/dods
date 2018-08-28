@@ -1,0 +1,19 @@
+.show-body {
+  background-image: url('../img/show-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left -130px;
+}
+
+@media (min-width: $smartphones) {
+  .show-body {
+    background-position: top 10px left -130px;
+  }
+}
+
+@media (min-width: $laptop) {
+  .show-body {
+    background-size: cover;
+    background-position: top center;
+  }
+}
