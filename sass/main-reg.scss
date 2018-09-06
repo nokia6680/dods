@@ -2,10 +2,61 @@
   @include container;
   width: 100%;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  &__schedule {
+    display: none;
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-reg {
+    position: relative;
+    &__schedule {
+      display: block;
+
+      background-image: url('../img/show-2-bg.png');
+      background-repeat: no-repeat;
+      background-size: 307px 201px;
+
+      width: 307px;
+      height: 201px;
+
+      font: {
+        size: 1.125em;
+        family: $ultra-font;
+        weight: 900;
+      }
+
+      color: $text-black;
+      line-height: 1;
+
+      text-align: center;
+      margin: 0;
+
+      padding-top: 75px;
+
+      position: absolute;
+
+      right: -77%;
+      top: 45%;
+
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media (min-width: $netbooks) {
+  .main-reg {
+    &__schedule {
+      transform: scale(1);
+      right: -90%;
+      padding-right: 20px;
+    }
+  }
 }
 
 @media (min-width: $netbooks) and (max-height: $netbooks-wide) {
@@ -25,5 +76,24 @@
   .main-reg {
     margin-top: 0;
     transition: 0.8s ease-in-out;
+  }
+}
+
+@media (min-width: $widebooks) {
+  .main-reg {
+    &__schedule {
+      background-size: 494px 326px;
+
+      width: 494px;
+      height: 326px;
+
+      font: {
+        size: 1.75em;
+      }
+
+      right: -55%;
+      padding-top: 115px;
+      padding-right: 40px;
+    }
   }
 }
